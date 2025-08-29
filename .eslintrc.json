@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "import", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "es5",
+        "printWidth": 100,
+        "tabWidth": 2,
+        "endOfLine": "auto"
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
