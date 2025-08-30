@@ -14,6 +14,7 @@ import FeaturesSection from '../widgets/FeaturesSection';
 import Footer from '../widgets/Footer';
 import Header from '../widgets/Header';
 import { Hero } from '../widgets/Hero';
+import IncludedInDiagnostics from '../widgets/IncludedInDiagnostics';
 import SolvedCases from '../widgets/SolvedCases';
 import { featuresSolvedCases } from '../widgets/SolvedCases/SolvedCasesData';
 
@@ -81,6 +82,7 @@ function App() {
 
           <SolvedCases card={featuresSolvedCases} />
           <BiographyArkadi />
+          <IncludedInDiagnostics />
         </main>
 
         <Footer />
