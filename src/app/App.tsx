@@ -1,5 +1,6 @@
 import { PricingCard } from '../entities/PricingCard';
 import { CalculatorAndDetails } from '../widgets/CalculatorNDetail';
+import { ExpertBlock } from '../widgets/ExpertBlock';
 import { Faq } from '../widgets/Faq';
 import Footer from '../widgets/Footer';
 import Header from '../widgets/Header';
@@ -39,6 +40,7 @@ function App() {
           <Faq/>
           <CalculatorAndDetails/>
           <DebtWarningBlock/>
+          <ExpertBlock/>
         </main>
 
         <Footer />
