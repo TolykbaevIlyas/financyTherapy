@@ -7,6 +7,7 @@ import { Hero } from '../widgets/Hero';
 import { LikeMedicine } from '../widgets/LikeMedicine';
 import { OurTreatment } from '../widgets/OurTreatment';
 import { Statictic } from '../widgets/Statictic';
+import { DebtWarningBlock } from '../widgets/WarningBlock';
 import { WorkSteps } from '../widgets/WorkSteps';
 
 import './App.css';
@@ -37,6 +38,7 @@ function App() {
           <WorkSteps/>
           <Faq/>
           <CalculatorAndDetails/>
+          <DebtWarningBlock/>
         </main>
 
         <Footer />
