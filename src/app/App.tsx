@@ -1,4 +1,6 @@
 import { PricingCard } from '../entities/PricingCard';
+import { CalculatorAndDetails } from '../widgets/CalculatorNDetail';
+import { Faq } from '../widgets/Faq';
 import Footer from '../widgets/Footer';
 import Header from '../widgets/Header';
 import { Hero } from '../widgets/Hero';
@@ -33,6 +35,8 @@ function App() {
           <OurTreatment/>
           <Statictic/>
           <WorkSteps/>
+          <Faq/>
+          <CalculatorAndDetails/>
         </main>
 
         <Footer />
