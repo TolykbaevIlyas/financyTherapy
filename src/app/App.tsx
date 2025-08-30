@@ -4,6 +4,8 @@ import Header from '../widgets/Header';
 import { Hero } from '../widgets/Hero';
 import { LikeMedicine } from '../widgets/LikeMedicine';
 import { OurTreatment } from '../widgets/OurTreatment';
+import { Statictic } from '../widgets/Statictic';
+import { WorkSteps } from '../widgets/WorkSteps';
 
 import './App.css';
 
@@ -29,6 +31,8 @@ function App() {
           />;
           <LikeMedicine/>
           <OurTreatment/>
+          <Statictic/>
+          <WorkSteps/>
         </main>
 
         <Footer />
