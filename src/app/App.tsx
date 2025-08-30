@@ -8,6 +8,7 @@ import {
   featuresWhyNot,
   featuresWhyNotMobile,
 } from '../shared/mocks/featuresData';
+import BiographyArkadi from '../widgets/BiographyArkadi';
 
 import FeaturesSection from '../widgets/FeaturesSection';
 import Footer from '../widgets/Footer';
@@ -79,6 +80,7 @@ function App() {
           />
 
           <SolvedCases card={featuresSolvedCases} />
+          <BiographyArkadi />
         </main>
 
         <Footer />
