@@ -14,7 +14,7 @@ export default function ExpertBlock() {
           </p>
         </div>
 
-        <div>
+        <div className="max-lg:hidden">
           <h3 className="text-lg md:text-xl font-bold text-black mb-4 text-left">
             Почему мне можно доверять:
           </h3>
@@ -40,7 +40,7 @@ export default function ExpertBlock() {
       </div>
 
       {/* Right Side */}
-      <div className="text-gray-700 space-y-4 text-left">
+      <div className="text-gray-700 space-y-4 text-left max-lg:hidden">
         <p>
           «Я не теоретик из бизнес-школы. 38 миллионов рублей собственной задолженности — это реальный опыт, который я прошел лично. Дикий разрушающий стресс, звонки кредиторов и коллекторов, бессонные ночи, чувство отчаяния и безысходности — все это было в моей жизни.
         </p>
@@ -53,6 +53,38 @@ export default function ExpertBlock() {
           Более 1500 человек уже получили персональные планы и решили свои финансовые проблемы. Разработанная мною система диагностики финансового состояния действительно работает.»
         </p>
       </div>
+
+      <div className="text-gray-700 space-y-4 text-left lg:hidden">
+        <p>Моя история: «Я не теоретик из университета. 38 миллионов рублей собственного долга — это то, через что я прошел лично. Дикий стресс, звонки кредиторов и коллекторов, бессонные ночи, чувство отчаяния и безысходности — все это было в моей жизни.</p>
+
+        <p>После того как выбрался сам, понял: 90% людей можно спасти от банкротства при правильной диагностике. Но никто этого не делает — все продают то, что им САМИМ выгодно.</p>
+
+        <p>1500+ наших клиентов уже получили персональные планы спасения. 8 из 10 избежали банкротства. Система работает.»</p>
+      </div>
+
+      <div className="lg:hidden">
+          <h3 className="text-lg md:text-xl font-bold text-black mb-4 text-left">
+            Почему мне можно доверять:
+          </h3>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex items-center gap-2">
+              <CheckCircle className="text-blue-600 w-5 h-5" />
+              Прошел через долги лично
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle className="text-blue-600 w-5 h-5" />
+              Знаю все схемы и способы изнутри
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle className="text-blue-600 w-5 h-5" />
+              Не продаю кредиты и банкротство
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle className="text-blue-600 w-5 h-5" />
+              Работаю только в ваших интересах
+            </li>
+          </ul>
+        </div>
     </section>
   );
 }

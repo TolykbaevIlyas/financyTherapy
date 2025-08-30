@@ -34,6 +34,12 @@ const plans = [
   { id: "3", price: "3999₽", description: "Свыше 3 млн" },
 ];
 
+const plans2 = [
+  { id: "1", price: "1999₽", description: "Если сумма долгов до 1 млн ₽" },
+  { id: "2", price: "2999₽", description: "Если сумма долгов до 3 млн ₽" },
+  { id: "3", price: "3999₽", description: "Если сумма долгов свыше 3 млн ₽" },
+];
+
 function App() {
   return (
     <>
@@ -42,21 +48,6 @@ function App() {
 
         <main className="flex-1 px-[20px] lg:px-0">       
           <Hero/>
-          <PricingCard
-            title="ПРОЗРАЧНОЕ ЦЕНООБРАЗОВАНИЕ"
-            plans={plans}
-            ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
-            onCtaClick={() => console.log("cta clicked")}
-          />;
-          <LikeMedicine/>
-          <OurTreatment/>
-          <Statictic/>
-          <WorkSteps/>
-          <Faq/>
-          <CalculatorAndDetails/>
-          <DebtWarningBlock/>
-          <ExpertBlock/>
-          {/* <Hero /> */}
           <div className="bg-[#FAFAFA]">
             {/* desktop */}
             <FeaturesSection
@@ -71,18 +62,28 @@ function App() {
             title="Что получаете?"
             card={featuresResult}
           />
+          <PricingCard
+            title="ПРОЗРАЧНОЕ ЦЕНООБРАЗОВАНИЕ"
+            titleM="ПРОЗРАЧНЫЕ ЦЕНЫ:"
+            plans={plans}
+            ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
+
+            onCtaClick={() => console.log("cta clicked")}
+          />;
+          <LikeMedicine/>
           {/* desktop */}
           <FeaturesSection
             className="hidden lg:flex"
             title="ПОЧЕМУ ДРУГИЕ РЕШЕНИЯ НЕ РАБОТАЮТ?"
             card={featuresWhyNot}
           />
+          <OurTreatment/>
           {/* desktop */}
-          <FeaturesSection
+          {/* <FeaturesSection
             className="hidden lg:flex"
             title="СРАВНИТЕ С АЛЬТЕРНАТИВАМИ:"
             card={featuresCompare}
-          />
+          /> */}
 
           {/* mobile  КОМПЛЕКСНОЕ РЕШЕНИЕ:*/}
           <FeaturesSection
@@ -110,7 +111,18 @@ function App() {
           />
 
           <SolvedCases card={featuresSolvedCases} />
+          <Statictic/>
+          <WorkSteps/>
+          <Faq/>
+          <CalculatorAndDetails/>
+          <DebtWarningBlock/>
+          <ExpertBlock/>
           <BiographyArkadi />
+          <PricingCard 
+            title="ЧЕСТНОЕ ЦЕНООБРАЗОВАНИЕ БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ:"
+            plans={plans2}
+            ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
+            onCtaClick={() => console.log("cta clicked")}/>
           <IncludedInDiagnostics />
         </main>
 

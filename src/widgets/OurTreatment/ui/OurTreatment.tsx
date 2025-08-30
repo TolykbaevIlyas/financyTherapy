@@ -10,10 +10,10 @@ const OurTreatment = () => {
   { id: "4", text: "Вместо продажи ненужных услуг — помогаем решить проблему" },
 ];
   return (
-    <section className="text-black mt-[96px] w-full">
+    <section className="text-black mt-[96px] w-full mb-[127px]">
         <ContainerWrapper>
             <div className='flex flex-col gap-[64px]'>
-                <div className='flex gap-[96px] m-auto'>
+                <div className='flex gap-[96px] m-auto max-lg:flex-col-reverse'>
                     <img className='max-w-[528px] w-full h-[512px]' src='/assets/images/Treatment.png'/>
                     <div className='flex flex-col gap-[20px] max-w-[480px] w-full'>
                         <img className='max-w-[48px] w-full h-[49px]' src='/assets/images/Logo.svg' alt="Logo" />

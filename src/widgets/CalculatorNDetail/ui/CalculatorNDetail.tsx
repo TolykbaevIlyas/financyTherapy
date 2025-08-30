@@ -118,10 +118,10 @@ const CalculatorAndDetails = () => {
         </button>
 
         {/* FAQ */}
-        <h2 className="text-center text-[36px] font-[600] leading-[122%] text-[#181d27] mt-[128px]">
+        <h2 className="text-center text-[36px] font-[600] leading-[122%] text-[#181d27] mt-[128px] max-lg:hidden">
           ТЕХНИЧЕСКИЕ ДЕТАЛИ ПРОЦЕССА
         </h2>
-        <div className="max-w-[768px] w-full mx-auto mt-8 space-y-2">
+        <div className="max-w-[768px] w-full mx-auto mt-8 space-y-2 max-lg:hidden">
           {details.map((item, index) => (
             <div
               key={index}
@@ -140,7 +140,7 @@ const CalculatorAndDetails = () => {
             </div>
           ))}
         </div>
-        <button className=" max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
+        <button className="max-lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
           УТОЧНИТЬ ДЕТАЛИ
         </button>
       </ContainerWrapper>
