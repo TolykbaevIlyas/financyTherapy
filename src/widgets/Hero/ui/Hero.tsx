@@ -30,6 +30,9 @@ const Hero = () => {
                     </div>
                     <img className='max-w-[528px] w-full h-[512px]' src='/assets/images/Hero.svg'/>
                 </div>
+                <div className='m-auto max-w-[768px] w-full mb-[64px]'>
+                    <h3 className='text-[36px] font-[600] leading-[122%]'>КОМПЛЕКСНОЕ РЕШЕНИЕ: <br/> ДИАГНОСТИКА + ПЕРСОНАЛЬНЫЙ ПЛАН</h3>
+                </div>
             </div>
         </ContainerWrapper>
 
