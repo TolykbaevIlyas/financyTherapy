@@ -12,6 +12,7 @@ import {
 import FeaturesSection from '../widgets/FeaturesSection';
 import Footer from '../widgets/Footer';
 import Header from '../widgets/Header';
+import { Hero } from '../widgets/Hero';
 
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
         <Header />
 
         <main className="flex-1 px-[20px] lg:px-0">
+
           <div className="bg-[#FAFAFA]">
             {/* desktop */}
             <FeaturesSection
@@ -73,6 +75,9 @@ function App() {
             title="СРАВНИТЕ С АЛЬТЕРНАТИВАМИ:"
             card={featuresCompare}
           />
+
+          <Hero/>
+
         </main>
 
         <Footer />
