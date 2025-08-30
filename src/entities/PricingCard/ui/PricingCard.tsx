@@ -29,6 +29,12 @@ const PricingCard = ({ title, plans, ctaLabel, onCtaClick }: PricingProps) => {
       >
         {ctaLabel}
       </button>
+      <div className="mt-[48px] flex justify-center gap-[32px]">
+        <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="" />
+        <img className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="" />
+        <img className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="" />
+        <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="" />
+      </div>
     </section>
   )
 }

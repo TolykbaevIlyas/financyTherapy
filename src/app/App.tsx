@@ -2,6 +2,8 @@ import { PricingCard } from '../entities/PricingCard';
 import Footer from '../widgets/Footer';
 import Header from '../widgets/Header';
 import { Hero } from '../widgets/Hero';
+import { LikeMedicine } from '../widgets/LikeMedicine';
+import { OurTreatment } from '../widgets/OurTreatment';
 
 import './App.css';
 
@@ -25,6 +27,8 @@ function App() {
             ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
             onCtaClick={() => console.log("cta clicked")}
           />;
+          <LikeMedicine/>
+          <OurTreatment/>
         </main>
 
         <Footer />
