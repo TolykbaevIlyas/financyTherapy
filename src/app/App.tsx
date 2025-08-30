@@ -13,6 +13,8 @@ import FeaturesSection from '../widgets/FeaturesSection';
 import Footer from '../widgets/Footer';
 import Header from '../widgets/Header';
 import { Hero } from '../widgets/Hero';
+import SolvedCases from '../widgets/SolvedCases';
+import { featuresSolvedCases } from '../widgets/SolvedCases/SolvedCasesData';
 
 import './App.css';
 
@@ -23,7 +25,7 @@ function App() {
         <Header />
 
         <main className="flex-1 px-[20px] lg:px-0">
-
+          {/* <Hero /> */}
           <div className="bg-[#FAFAFA]">
             {/* desktop */}
             <FeaturesSection
@@ -32,6 +34,24 @@ function App() {
               card={featuresAnalyze}
             />
           </div>
+          {/* desktop */}
+          <FeaturesSection
+            className="hidden lg:flex"
+            title="Что получаете?"
+            card={featuresResult}
+          />
+          {/* desktop */}
+          <FeaturesSection
+            className="hidden lg:flex"
+            title="ПОЧЕМУ ДРУГИЕ РЕШЕНИЯ НЕ РАБОТАЮТ?"
+            card={featuresWhyNot}
+          />
+          {/* desktop */}
+          <FeaturesSection
+            className="hidden lg:flex"
+            title="СРАВНИТЕ С АЛЬТЕРНАТИВАМИ:"
+            card={featuresCompare}
+          />
 
           {/* mobile  КОМПЛЕКСНОЕ РЕШЕНИЕ:*/}
           <FeaturesSection
@@ -57,27 +77,8 @@ function App() {
             title="СРАВНИТЕ:"
             card={featuresCompareMobile}
           />
-          {/* desktop */}
-          <FeaturesSection
-            className="hidden lg:flex"
-            title="Что получаете?"
-            card={featuresResult}
-          />
-          {/* desktop */}
-          <FeaturesSection
-            className="hidden lg:flex"
-            title="ПОЧЕМУ ДРУГИЕ РЕШЕНИЯ НЕ РАБОТАЮТ?"
-            card={featuresWhyNot}
-          />
-          {/* desktop */}
-          <FeaturesSection
-            className="hidden lg:flex"
-            title="СРАВНИТЕ С АЛЬТЕРНАТИВАМИ:"
-            card={featuresCompare}
-          />
 
-          <Hero/>
-
+          <SolvedCases card={featuresSolvedCases} />
         </main>
 
         <Footer />
