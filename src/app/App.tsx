@@ -120,6 +120,7 @@ function App() {
           <BiographyArkadi />
           <PricingCard 
             title="ЧЕСТНОЕ ЦЕНООБРАЗОВАНИЕ БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ:"
+            titleM='НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:'
             plans={plans2}
             ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
             onCtaClick={() => console.log("cta clicked")}/>
