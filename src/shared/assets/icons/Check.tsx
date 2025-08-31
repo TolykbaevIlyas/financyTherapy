@@ -1,15 +1,25 @@
-import React from 'react';
+import React from "react";
 
-const Check = () => {
+type CheckProps = React.SVGProps<SVGSVGElement>;
+
+const Check: React.FC<CheckProps> = ({ className, ...props }) => {
   return (
-    <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
       <path
         d="M0.666992 12.333C0.666992 5.70559 6.03958 0.333008 12.667 0.333008C19.2944 0.333008 24.667 5.70559 24.667 12.333C24.667 18.9604 19.2944 24.333 12.667 24.333C6.03958 24.333 0.666992 18.9604 0.666992 12.333Z"
         fill="#DCFAE6"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M17.763 7.72268L10.603 14.6327L8.70301 12.6027C8.35301 12.2727 7.80301 12.2527 7.40301 12.5327C7.01301 12.8227 6.90301 13.3327 7.14301 13.7427L9.39301 17.4027C9.61301 17.7427 9.99301 17.9527 10.423 17.9527C10.833 17.9527 11.223 17.7427 11.443 17.4027C11.803 16.9327 18.673 8.74268 18.673 8.74268C19.573 7.82268 18.483 7.01268 17.763 7.71268V7.72268Z"
         fill="#079455"
       />

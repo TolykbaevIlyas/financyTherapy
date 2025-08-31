@@ -1,12 +1,11 @@
-"use client"; // если у тебя Next.js 13+
-import React from 'react';
+
 import { motion } from "framer-motion";
 import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 import { Checklist } from '../../../entities/checklist';
 import CardFeaturesSect from '../../../entities/CardFeaturesSect';
-import Bank from '../../../shared/assets/icons/Bank';
-import MFO from '../../../shared/assets/icons/MFO';
-import Laywers from '../../../shared/assets/icons/Laywers';
+import Situation from '../../../shared/assets/icons/Situation';
+import Plan from '../../../shared/assets/icons/Plan';
+import Specialist from '../../../shared/assets/icons/Specialist';
 
 const Hero = () => {
   const symptoms = [
@@ -19,10 +18,25 @@ const Hero = () => {
   ];
 
   const featuresWhyNotMobile = [
-    { icon: <Bank />, title: 'Анализ ситуации', description: '' },
-    { icon: <MFO />, title: 'Персональный план', description: '' },
-    { icon: <Laywers />, title: 'Профильный специалист', description: '' },
-  ];
+  {
+    icon: <Situation />,
+    title: 'Анализ ситуации',
+    description: '',
+    maxWidth: 'min-w-[343px]',
+  },
+  {
+    icon: <Plan />,
+    title: 'Персональный план',
+    description: '',
+    maxWidth: 'min-w-[343px]',
+  },
+  {
+    icon: <Specialist />,
+    title: 'Профильный специалист',
+    description: '',
+    maxWidth: 'min-w-[343px]',
+  },
+];
 
   return (
     <section className="text-black mt-[96px] w-full">

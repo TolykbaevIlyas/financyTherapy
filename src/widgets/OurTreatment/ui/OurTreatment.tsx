@@ -1,5 +1,4 @@
-"use client"; // если Next.js 13+
-import React from 'react';
+
 import { motion } from "framer-motion";
 import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 import { Checklist } from '../../../entities/checklist';
