@@ -89,25 +89,25 @@ const CalculatorAndDetails = () => {
             <p className='text-left text-[18px] leading-[156%] font-[500] text-[#181d27]'>Ваши ежедневные потери:</p>
             <div className='flex flex-col gap-[16px]'>
                 <div className='w-full flex justify-between font-[400] text-[18px] text-[#181d27]'>
-                    <p>На процентах:</p>
+                    <p className='max-lg:max-w-[129px] max-lg:w-full'>На процентах:</p>
                     <p>{formatCurrency(dailyInterest)}</p>
                 </div>
                 <div className='w-full flex justify-between font-[400] text-[18px] text-[#181d27]'>
-                    <p>На штрафах при просрочке:</p>
+                    <p className='max-lg:max-w-[130px] max-lg:w-full max-lg:text-left'>На штрафах при просрочке:</p>
                     <p>{formatCurrency(dailyFine)}</p>
                 </div>
                 <div className='w-full flex justify-between font-[400] text-[18px] text-[#181d27]'>
-                    <p>Упущенная выгода:</p>
+                    <p className='max-lg:max-w-[130px] max-lg:w-full max-lg:text-left'>Упущенная выгода:</p>
                     <p>{formatCurrency(dailyLoss)}</p>
                 </div>
             </div>
             <div className='flex flex-col gap-[20px]'>
                 <div className='w-full flex justify-between'> 
-                    <p className='font-[600] text-[18px] text-[#181d27]'>За месяц это составит:</p>
+                    <p className='font-[600] text-[18px] text-[#181d27] max-lg:max-w-[130px] max-lg:w-full max-lg:text-left'>За месяц это составит:</p>
                     <p className='font-[600] text-[18px] text-[#181d27]'>{formatCurrency(monthlyLoss)}</p>
                 </div>
                 <div className='w-full flex justify-between'>
-                    <p className='font-[600] text-[18px] text-[#181d27]'>За год это составит:</p>
+                    <p className='font-[600] text-[18px] text-[#181d27] max-lg:max-w-[130px] max-lg:w-full max-lg:text-left'>За год это составит:</p>
                     <p className='font-[600] text-[18px] text-[#181d27]'>{formatCurrency(yearlyLoss)}</p>
                 </div>
             </div>

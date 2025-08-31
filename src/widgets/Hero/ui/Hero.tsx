@@ -8,12 +8,12 @@ import Laywers from '../../../shared/assets/icons/Laywers';
 
 const Hero = () => {
   const symptoms = [
-  { id: "1", text: "Платежи съедают больше 50% дохода?" },
-  { id: "2", text: "Берете новые кредиты для оплаты старых?" },
-  { id: "3", text: "Живете на микрозаймы?" },
-  { id: "4", text: "Получаете звонки от коллекторов?" },
-  { id: "5", text: "Скрываете финансовые проблемы от близких?" },
-  { id: "6", text: "Думаете о банкротстве, но не уверены, что это выход?" },
+  { id: "1", text: "Платежи съедают больше 50% дохода?", textM:"Платежи >50% дохода?" },
+  { id: "2", text: "Берете новые кредиты для оплаты старых?",textM:"Новые кредиты на старые?" },
+  { id: "3", text: "Живете на микрозаймы?",textM:"Живешь на микрозаймы?" },
+  { id: "4", text: "Получаете звонки от коллекторов?",textM: "Звонят коллекторы?"},
+  { id: "5", text: "Скрываете финансовые проблемы от близких?", textM:"Скрываешь от близких?"},
+  { id: "6", text: "Думаете о банкротстве, но не уверены, что это выход?", textM:"Думаешь о банкротстве?" },
 ];
 
 const featuresWhyNotMobile = [
@@ -67,7 +67,8 @@ const featuresWhyNotMobile = [
                         </div>
                         </>
                     </div>
-                    <img className='max-w-[528px] w-full h-[512px]' src='/assets/images/Hero.png'/>
+                    <img className='max-w-[528px] w-full h-[512px] max-lg:hidden' src='/assets/images/Hero.png'/>
+                    <img className='max-w-[343px] w-full h-[343px] lg:hidden m-auto' src='/assets/images/HeroMobile.svg'/>
                 </div>
                 <div className='m-auto max-w-[768px] w-full mb-[64px]'>
                     <h3 className='text-[36px] font-[600] leading-[122%] max-lg:hidden'>КОМПЛЕКСНОЕ РЕШЕНИЕ: <br/> ДИАГНОСТИКА + ПЕРСОНАЛЬНЫЙ ПЛАН</h3>

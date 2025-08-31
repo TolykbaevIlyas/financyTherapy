@@ -89,7 +89,12 @@ export default function DebtWarningBlock() {
             <img
             src="/assets/images/Warning.svg"
             alt=""
-            className=" max-w-[576px] w-full h-[752px]"
+            className=" max-w-[576px] w-full h-[752px] max-lg:hidden"
+            />
+            <img
+            src="/assets/images/WarningMobile.svg"
+            alt=""
+            className=" max-w-[343px] w-full h-[458px] lg:hidden"
             />
         </div>
       </div>

@@ -13,7 +13,7 @@ const PricingCard = ({ title,titleM, plans, ctaLabel, onCtaClick }: PricingProps
     <section className="text-center py-12">
         <h2 className="text-[36px] font-[600] leading-[122%] mb-8 text-[#181d27] max-lg:hidden">{title}</h2>
         <h2 className="text-[30px] font-[600] leading-[122%] mb-8 text-[#181d27] lg:hidden max-w-[295px] w-full m-auto">{titleM}</h2>
-        <div className="max-w-[1216px] w-full h-[240px] grid mt-[64px] max-lg:justify-center max-lg:text-center max-lg:grid-cols-1 grid-cols-3 items-center text-center bg-[#fafafa] gap-6 mx-auto mb-8 max-lg:h-[552px] max-lg:max-w-[375px]">
+        <div className="max-w-[1216px] max-lg:m-auto w-full h-[240px] grid mt-[64px] max-lg:justify-center max-lg:text-center max-lg:grid-cols-1 grid-cols-3 items-center text-center bg-[#fafafa] gap-6 mx-auto mb-8 max-lg:h-[552px] max-lg:max-w-[375px]">
           {plans.map((plan) => (
             <div
               key={plan.id}
@@ -27,9 +27,15 @@ const PricingCard = ({ title,titleM, plans, ctaLabel, onCtaClick }: PricingProps
 
       <button
         onClick={onCtaClick}
-        className="cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[48px] mt-[160px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+        className="max-lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[48px] mt-[160px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
       >
         {ctaLabel}
+      </button>
+      <button
+        onClick={onCtaClick}
+        className="lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[48px] mt-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+      >
+        ПОЛУЧИТЬ ПЛАН
       </button>
       <div className="mt-[48px] flex justify-center gap-[32px]">
         <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="" />
