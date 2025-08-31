@@ -1,6 +1,5 @@
 "use client"; // если Next.js 13+
 import { motion } from "framer-motion";
-import React from 'react';
 
 const Statictic = () => {
   const stats = [
