@@ -1,12 +1,13 @@
+"use client";
 import React, { useState } from 'react';
 import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { motion, AnimatePresence } from "framer-motion";
 
 const CalculatorAndDetails = () => {
   const [amount, setAmount] = useState(1000000);
   const [hasMicro, setHasMicro] = useState(false);
-  const [openIndex, setOpenIndex] = useState(0);
-  
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const details = [
     {
@@ -55,21 +56,41 @@ const CalculatorAndDetails = () => {
   const monthlyLoss = dailyLoss * 30;
   const yearlyLoss = dailyLoss * 12;
 
-  const formatCurrency = (value) =>
-    value.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
+  const formatCurrency = (value: number) =>
+    value.toLocaleString('ru-RU', {
+      style: 'currency',
+      currency: 'RUB',
+      maximumFractionDigits: 0,
+    });
 
   return (
     <section className="mt-[80px] text-black">
       <ContainerWrapper>
-        {/* Калькулятор */}
-        <h2 className="text-center font-[600] text-[36px] leading-[122%] text-[#181d27]">
+        {/* Заголовок */}
+        <motion.h2
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center font-[600] text-[36px] leading-[122%] text-[#181d27]"
+        >
           ПОСЧИТАЙТЕ ПОТЕРИ
-        </h2>
-        <div className="bg-white border border-[#e9eaeb] rounded-lg p-6 mt-8 max-w-[768px] w-full mx-auto">
+        </motion.h2>
+
+        {/* Калькулятор */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="bg-white border border-[#e9eaeb] rounded-lg p-6 mt-8 max-w-[768px] w-full mx-auto"
+        >
           <h3 className="text-[30px] max-w-[670px] w-full text-left font-[600] leading-[127%] mb-4 text-[#181d27]">
             Узнайте, сколько денег вы теряете каждый день промедления
           </h3>
-          <label className="block font-[500] text-[14px] leading-[143%] text-[#414651] mb-2 text-left">Введите общую сумму ваших долгов</label>
+          <label className="block font-[500] text-[14px] leading-[143%] text-[#414651] mb-2 text-left">
+            Введите общую сумму ваших долгов
+          </label>
           <input
             type="number"
             value={amount}
@@ -86,63 +107,110 @@ const CalculatorAndDetails = () => {
           </label>
 
           <div className="text-[16px] leading-[156%] space-y-2 flex flex-col gap-[24px]">
-            <p className='text-left text-[18px] leading-[156%] font-[500] text-[#181d27]'>Ваши ежедневные потери:</p>
-            <div className='flex flex-col gap-[16px]'>
-                <div className='w-full flex justify-between font-[400] text-[18px] text-[#181d27]'>
-                    <p>На процентах:</p>
-                    <p>{formatCurrency(dailyInterest)}</p>
-                </div>
-                <div className='w-full flex justify-between font-[400] text-[18px] text-[#181d27]'>
-                    <p>На штрафах при просрочке:</p>
-                    <p>{formatCurrency(dailyFine)}</p>
-                </div>
-                <div className='w-full flex justify-between font-[400] text-[18px] text-[#181d27]'>
-                    <p>Упущенная выгода:</p>
-                    <p>{formatCurrency(dailyLoss)}</p>
-                </div>
+            <p className="text-left text-[18px] leading-[156%] font-[500] text-[#181d27]">
+              Ваши ежедневные потери:
+            </p>
+            <div className="flex flex-col gap-[16px]">
+              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27]">
+                <p>На процентах:</p>
+                <p>{formatCurrency(dailyInterest)}</p>
+              </div>
+              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27]">
+                <p>На штрафах при просрочке:</p>
+                <p>{formatCurrency(dailyFine)}</p>
+              </div>
+              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27]">
+                <p>Упущенная выгода:</p>
+                <p>{formatCurrency(dailyLoss)}</p>
+              </div>
             </div>
-            <div className='flex flex-col gap-[20px]'>
-                <div className='w-full flex justify-between'> 
-                    <p className='font-[600] text-[18px] text-[#181d27]'>За месяц это составит:</p>
-                    <p className='font-[600] text-[18px] text-[#181d27]'>{formatCurrency(monthlyLoss)}</p>
-                </div>
-                <div className='w-full flex justify-between'>
-                    <p className='font-[600] text-[18px] text-[#181d27]'>За год это составит:</p>
-                    <p className='font-[600] text-[18px] text-[#181d27]'>{formatCurrency(yearlyLoss)}</p>
-                </div>
+            <div className="flex flex-col gap-[20px]">
+              <div className="w-full flex justify-between">
+                <p className="font-[600] text-[18px] text-[#181d27]">
+                  За месяц это составит:
+                </p>
+                <p className="font-[600] text-[18px] text-[#181d27]">
+                  {formatCurrency(monthlyLoss)}
+                </p>
+              </div>
+              <div className="w-full flex justify-between">
+                <p className="font-[600] text-[18px] text-[#181d27]">
+                  За год это составит:
+                </p>
+                <p className="font-[600] text-[18px] text-[#181d27]">
+                  {formatCurrency(yearlyLoss)}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <button className="cursor-pointer max-w-[768px] w-full mt-[64px] bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
+        </motion.div>
+
+        {/* Кнопка калькулятора */}
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="cursor-pointer max-w-[768px] w-full mt-[64px] bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block"
+        >
           ОСТАНОВИТЬ РОСТ ДОЛГА
-        </button>
+        </motion.button>
 
         {/* FAQ */}
-        <h2 className="text-center text-[36px] font-[600] leading-[122%] text-[#181d27] mt-[128px] max-lg:hidden">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center text-[36px] font-[600] leading-[122%] text-[#181d27] mt-[128px] max-lg:hidden"
+        >
           ТЕХНИЧЕСКИЕ ДЕТАЛИ ПРОЦЕССА
-        </h2>
+        </motion.h2>
+
         <div className="max-w-[768px] w-full mx-auto mt-8 space-y-2 max-lg:hidden">
           {details.map((item, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className="border-b border-[#e9eaeb] py-4 cursor-pointer"
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
               <div className="flex justify-between text-left">
-                <p className="font-[600] leading-[150%] text-[#181d27] text-[18px] ">{item.question}</p>
+                <p className="font-[600] leading-[150%] text-[#181d27] text-[18px] ">
+                  {item.question}
+                </p>
                 {openIndex === index ? <ChevronUp /> : <ChevronDown />}
               </div>
-              {openIndex === index && (
-                <p className="text-[#535862] font-[400] text-[16px] text-left mt-2 leading-[150%]">
-                  {item.answer}
-                </p>
-              )}
-            </div>
+              <AnimatePresence>
+                {openIndex === index && (
+                  <motion.p
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="text-[#535862] font-[400] text-[16px] text-left mt-2 leading-[150%]"
+                  >
+                    {item.answer}
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
         </div>
-        <button className="max-lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
+
+        {/* Кнопка FAQ */}
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="max-lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block"
+        >
           УТОЧНИТЬ ДЕТАЛИ
-        </button>
+        </motion.button>
       </ContainerWrapper>
     </section>
   );

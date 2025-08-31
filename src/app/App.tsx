@@ -48,6 +48,13 @@ function App() {
 
         <main className="flex-1 px-[20px] lg:px-0">       
           <Hero/>
+          {/* mobile  КОМПЛЕКСНОЕ РЕШЕНИЕ:*/}
+          {/* <FeaturesSection
+            className="flex lg:hidden"
+            title="КОМПЛЕКСНОЕ РЕШЕНИЕ:"
+            card={featuresComplexMobile}
+          />
+           */}
           <div className="bg-[#FAFAFA]">
             {/* desktop */}
             <FeaturesSection
@@ -77,42 +84,27 @@ function App() {
             title="ПОЧЕМУ ДРУГИЕ РЕШЕНИЯ НЕ РАБОТАЮТ?"
             card={featuresWhyNot}
           />
-          <OurTreatment/>
-          {/* desktop */}
-          {/* <FeaturesSection
-            className="hidden lg:flex"
-            title="СРАВНИТЕ С АЛЬТЕРНАТИВАМИ:"
-            card={featuresCompare}
-          /> */}
-
-          {/* mobile  КОМПЛЕКСНОЕ РЕШЕНИЕ:*/}
-          <FeaturesSection
-            className="flex lg:hidden"
-            title="КОМПЛЕКСНОЕ РЕШЕНИЕ:"
-            card={featuresComplexMobile}
-          />
           {/* mobile  ПОЧЕМУ ДРУГИЕ НЕ ПОМОГАЮТ:*/}
           <FeaturesSection
             className="flex lg:hidden"
             title="ПОЧЕМУ ДРУГИЕ НЕ ПОМОГАЮТ:"
             card={featuresWhyNotMobile}
           />
+          <OurTreatment/>
+          
+          <SolvedCases card={featuresSolvedCases} />
+          <Statictic/>
+          <WorkSteps/>
+                    
           {/* mobile ЧТО АНАЛИЗИРУЕМ:*/}
           <FeaturesSection
             className="flex lg:hidden"
             title="ЧТО АНАЛИЗИРУЕМ:"
             card={featuresAnalyzeMobile}
           />
-          {/* mobile  СРАВНИТЕ */}
-          <FeaturesSection
-            className="flex lg:hidden"
-            title="СРАВНИТЕ:"
-            card={featuresCompareMobile}
-          />
+          
 
-          <SolvedCases card={featuresSolvedCases} />
-          <Statictic/>
-          <WorkSteps/>
+
           <Faq/>
           <CalculatorAndDetails/>
           <DebtWarningBlock/>
@@ -125,6 +117,18 @@ function App() {
             ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
             onCtaClick={() => console.log("cta clicked")}/>
           <IncludedInDiagnostics />
+          {/* desktop */}
+          <FeaturesSection
+            className="hidden lg:flex"
+            title="СРАВНИТЕ С АЛЬТЕРНАТИВАМИ:"
+            card={featuresCompare}
+          />
+                    {/* mobile  СРАВНИТЕ */}
+          <FeaturesSection
+            className="flex lg:hidden"
+            title="СРАВНИТЕ:"
+            card={featuresCompareMobile}
+          />
         </main>
 
         <Footer />
