@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import ContainerWrapper from "../../../shared/ui/ContainerWrapper";
 import Check from "../../../shared/assets/icons/Check";
 import { motion } from "framer-motion";

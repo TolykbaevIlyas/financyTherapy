@@ -1,2 +1,2 @@
-import Checklist from "./ui/checklist";
+import Checklist from "./ui/Checklist";
 export {Checklist}

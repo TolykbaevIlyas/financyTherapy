@@ -12,7 +12,6 @@ import {
   featuresAnalyzeMobile,
   featuresCompare,
   featuresCompareMobile,
-  featuresComplexMobile,
   featuresResult,
   featuresWhyNot,
   featuresWhyNotMobile,

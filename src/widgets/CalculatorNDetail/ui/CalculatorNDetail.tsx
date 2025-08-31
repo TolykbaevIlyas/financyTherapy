@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
