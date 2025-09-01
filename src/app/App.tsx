@@ -28,15 +28,15 @@ import { featuresSolvedCases } from '../widgets/SolvedCases/SolvedCasesData';
 import './App.css';
 
 const plans = [
-  { id: "1", price: "1999₽", description: "До 1 млн долгов" },
-  { id: "2", price: "2999₽", description: "До 3 млн долгов" },
-  { id: "3", price: "3999₽", description: "Свыше 3 млн" },
+  { id: '1', price: '1999₽', description: 'До 1 млн долгов' },
+  { id: '2', price: '2999₽', description: 'До 3 млн долгов' },
+  { id: '3', price: '3999₽', description: 'Свыше 3 млн' },
 ];
 
 const plans2 = [
-  { id: "1", price: "1999₽", description: "Если сумма долгов до 1 млн ₽" },
-  { id: "2", price: "2999₽", description: "Если сумма долгов до 3 млн ₽" },
-  { id: "3", price: "3999₽", description: "Если сумма долгов свыше 3 млн ₽" },
+  { id: '1', price: '1999₽', description: 'Если сумма долгов до 1 млн ₽' },
+  { id: '2', price: '2999₽', description: 'Если сумма долгов до 3 млн ₽' },
+  { id: '3', price: '3999₽', description: 'Если сумма долгов свыше 3 млн ₽' },
 ];
 
 function App() {
@@ -45,8 +45,8 @@ function App() {
       <div className="flex flex-col min-h-screen ">
         <Header />
 
-        <main className="flex-1 px-[20px] lg:px-0">       
-          <Hero/>
+        <main className="flex-1 px-[16px] lg:px-0">
+          <Hero />
           {/* mobile  КОМПЛЕКСНОЕ РЕШЕНИЕ:*/}
           {/* <FeaturesSection
             className="flex lg:hidden"
@@ -73,10 +73,10 @@ function App() {
             titleM="ПРОЗРАЧНЫЕ ЦЕНЫ:"
             plans={plans}
             ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
-
-            onCtaClick={() => console.log("cta clicked")}
-          />;
-          <LikeMedicine/>
+            onCtaClick={() => console.log('cta clicked')}
+          />
+          ;
+          <LikeMedicine />
           {/* desktop */}
           <FeaturesSection
             className="hidden lg:flex"
@@ -89,32 +89,28 @@ function App() {
             title="ПОЧЕМУ ДРУГИЕ НЕ ПОМОГАЮТ:"
             card={featuresWhyNotMobile}
           />
-          <OurTreatment/>
-          
+          <OurTreatment />
           <SolvedCases card={featuresSolvedCases} />
-          <Statictic/>
-          <WorkSteps/>
-                    
+          <Statictic />
+          <WorkSteps />
           {/* mobile ЧТО АНАЛИЗИРУЕМ:*/}
           <FeaturesSection
             className="flex lg:hidden"
             title="ЧТО АНАЛИЗИРУЕМ:"
             card={featuresAnalyzeMobile}
           />
-          
-
-
-          <Faq/>
-          <CalculatorAndDetails/>
-          <DebtWarningBlock/>
-          <ExpertBlock/>
+          <Faq />
+          <CalculatorAndDetails />
+          <DebtWarningBlock />
+          <ExpertBlock />
           <BiographyArkadi />
-          <PricingCard 
+          <PricingCard
             title="ЧЕСТНОЕ ЦЕНООБРАЗОВАНИЕ БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ:"
-            titleM='НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:'
+            titleM="НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:"
             plans={plans2}
             ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
-            onCtaClick={() => console.log("cta clicked")}/>
+            onCtaClick={() => console.log('cta clicked')}
+          />
           <IncludedInDiagnostics />
           {/* desktop */}
           <FeaturesSection
@@ -122,7 +118,7 @@ function App() {
             title="СРАВНИТЕ С АЛЬТЕРНАТИВАМИ:"
             card={featuresCompare}
           />
-                    {/* mobile  СРАВНИТЕ */}
+          {/* mobile  СРАВНИТЕ */}
           <FeaturesSection
             className="flex lg:hidden"
             title="СРАВНИТЕ:"

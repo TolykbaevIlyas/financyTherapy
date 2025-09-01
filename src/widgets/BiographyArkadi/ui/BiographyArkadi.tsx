@@ -1,8 +1,8 @@
-"use client";
-import { Button } from "antd";
-import ContainerWrapper from "../../../shared/ui/ContainerWrapper";
-import arcadi from "../../../../public/arkadi.png";
-import { motion } from "framer-motion";
+'use client';
+import { Button } from 'antd';
+import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
+import arcadi from '../../../../public/arkadi.png';
+import { motion } from 'framer-motion';
 
 const BiographyArkadi = () => {
   return (
@@ -10,7 +10,7 @@ const BiographyArkadi = () => {
       <div className="bg-[#1849A9] flex flex-col-reverse md:flex-row justify-between rounded-[24px] overflow-hidden">
         {/* Контент */}
         <motion.div
-          className="flex flex-col gap-[48px] p-[32px] md:p-[64px] max-w-[700px] w-full text-white"
+          className="flex flex-col gap-[48px]  p-[24px]  justify-start md:p-[64px] max-w-[700px] w-full text-white"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -38,16 +38,19 @@ const BiographyArkadi = () => {
             </motion.p>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <Button type="primary" className="max-w-[305px]">
-              ПОЛУЧИТЬ ПОМОЩЬ ЭКСПЕРТА
-            </Button>
-          </motion.div>
+          <div className="flex justify-start  w-full">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="max-w-[305px] w-full"
+            >
+              <Button type="primary" className="w-full">
+                ПОЛУЧИТЬ ПОМОЩЬ ЭКСПЕРТА
+              </Button>
+            </motion.div>
+          </div>
         </motion.div>
 
         {/* Фото */}
