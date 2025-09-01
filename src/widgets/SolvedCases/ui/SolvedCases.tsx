@@ -13,7 +13,7 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         viewport={{ once: true, amount: 0.2 }}
-        className="flex flex-col gap-[20px] mb-[96px] text-[#000]"
+        className="flex flex-col gap-[20px] mb-[50px] text-[#000]"
       >
         <h2 className="text-[32px] font-semibold">Примеры решенных ситуаций</h2>
         <p className="text-[20px] font-normal text-[#535862]">Разнообразие успешных кейсов</p>
@@ -21,12 +21,16 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
 
       {/* Сетка карточек */}
       <div className="relative border border-b-[#E9EAEB] pb-[64px]">
+        {/* Контейнер с карточками */}
         <div
           className="
       grid gap-[12px] mx-auto justify-items-center 
       grid-cols-1 md:grid-cols-3
-      overflow-hidden
-      max-h-[calc(4*300px)] md:max-h-[calc(6*300px)] 
+      overflow-y-auto
+      max-h-[calc(4*320px)] md:max-h-[calc(4*320px)]
+      pr-2 pt-[50px]
+      scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent
+      hover:scrollbar-thumb-gray-500
     "
         >
           {card.map((item, index) => (
@@ -51,12 +55,8 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
           ))}
         </div>
 
-        {/* Градиент */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          viewport={{ once: true }}
+        {/* Градиент всегда внизу */}
+        <div
           className="
       pointer-events-none absolute bottom-0 left-0 w-full 
       h-[320px] bg-gradient-to-t from-white to-transparent
