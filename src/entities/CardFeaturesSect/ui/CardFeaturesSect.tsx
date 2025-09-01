@@ -9,7 +9,7 @@ interface ICard {
 
 const CardFeaturesSect = ({ icon, title, description, maxWidth }: ICard) => {
   return (
-    <div className={`flex w-full ${maxWidth ? maxWidth : 'min-w-[384px]'}`}>
+    <div className={`flex w-full ${maxWidth ? maxWidth : 'max-w-[384px] w-full'}`}>
       <div key={0} className="flex flex-col items-center gap-4 text-center w-full">
         {icon}
         <div className="flex flex-col gap-1 max-w-[320px] w-full">
