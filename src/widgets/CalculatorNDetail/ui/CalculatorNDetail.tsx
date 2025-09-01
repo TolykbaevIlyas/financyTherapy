@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
-import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 
 const CalculatorAndDetails = () => {
@@ -50,8 +49,8 @@ const CalculatorAndDetails = () => {
   // Расчёты
   const interestRate = hasMicro ? 0.008 : 0.002;
   const fineRate = hasMicro ? 0.015 : 0.004;
-  const dailyInterest = amount * interestRate;
-  const dailyFine = amount * fineRate;
+  const dailyInterest = Number(amount) * interestRate;
+  const dailyFine = Number(amount) * fineRate;
   const dailyLoss = dailyInterest + dailyFine;
   const monthlyLoss = dailyLoss * 30;
   const yearlyLoss = dailyLoss * 12;
