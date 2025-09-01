@@ -70,7 +70,7 @@ const Faq = () => {
           </div>
 
           {/* Правая колонка (desktop) */}
-          <div className="flex flex-col flex-wrap gap-[32px] h-[844px] items-start max-lg:hidden ">
+          <div className="flex flex-col flex-wrap gap-[32px] h-[854px] items-start max-lg:hidden ">
             {faqItems.map((item, idx) => (
               <motion.div
                 key={idx}
@@ -78,7 +78,7 @@ const Faq = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: idx * 0.2 }}
                 viewport={{ once: true }}
-                className="text-[#181d27] max-w-[364px] h-fit w-full md:w-[calc(50%-16px)] text-left"
+                className="text-[#181d27] max-w-[364px] mr-[32px] h-fit w-full md:w-[calc(50%-16px)] text-left"
               >
                 <h3 className="font-[600] text-[18px] leading-[156%] mb-2">
                   {item.question}
