@@ -6,7 +6,7 @@ const LikeMedicine = () => {
   return (
     <div>
       <ContainerWrapper>
-        <div className='flex flex-col gap-[64px]'>
+        <div className='flex flex-col'>
 
           {/* Заголовки */}
           <motion.div
@@ -26,7 +26,7 @@ const LikeMedicine = () => {
             <h3 className='max-w-[343px] text-[36px] w-full m-auto leading-[120%] text-[#181d27] font-[600] lg:hidden'>
               КАК ВРАЧ, НО ДЛЯ ФИНАНСОВ
             </h3>
-            <p className='max-w-[343px] m-auto w-full text-[18px] leading-[150%] font-[400] text-[#535862] lg:hidden'>
+            <p className='max-w-[353px] mb-[64px] m-auto w-full text-[18px] leading-[150%] font-[400] text-[#535862] lg:hidden'>
               ИСПОЛЬЗУЕМ МЕДИЦИНСКИЙ ПОДХОД К ФИНАНСОВОМУ ОЗДОРОВЛЕНИЮ
             </p>
           </motion.div>

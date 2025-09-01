@@ -32,7 +32,7 @@ const Statictic = () => {
   ];
 
   return (
-    <section className='mt-[96px]'>
+    <section className='mt-[96px] '>
       {/* Заголовки */}
       <motion.h4
         initial={{ opacity: 0, y: -30 }}
@@ -55,7 +55,9 @@ const Statictic = () => {
       </motion.h4>
 
       {/* Сетка статистики */}
-      <div className="mt-[64px] grid grid-cols-2 gap-4 w-full max-w-[1280px] mx-auto max-lg:grid-cols-1 max-lg:m-auto">
+      <div className="relative mt-[64px] grid grid-cols-2 gap-4 w-full max-w-[1280px] mx-auto max-lg:grid-cols-1 max-lg:m-auto ">
+        <div className="absolute top-0 bottom-0 left-1/2 w-px bg-[#e9eaeb] max-lg:hidden"></div>
+      <div className="absolute left-0 right-0 top-1/2 h-px bg-[#e9eaeb] max-lg:hidden"></div>
         {stats.map((stat, index) => (
           <motion.div
             key={index}
@@ -88,7 +90,7 @@ const Statictic = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true }}
-        className="mt-[96px] cursor-pointer bg-[#1570ef] max-w-[1152px] w-full h-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition max-lg:hidden"
+        className="mt-[96px] mb-[96px] cursor-pointer bg-[#1570ef] max-w-[1152px] w-full h-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition max-lg:hidden"
       >
         ПОЛУЧИТЬ ПЛАН ДЛЯ МОЕЙ СИТУАЦИИ
       </motion.button>
