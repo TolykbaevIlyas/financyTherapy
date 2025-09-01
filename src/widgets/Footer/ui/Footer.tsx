@@ -1,6 +1,6 @@
 import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 
-import logo from '../../../shared/assets/logo-finan.png';
+import logo from '../../../shared/assets/logo.svg';
 
 const Footer = () => {
   return (
