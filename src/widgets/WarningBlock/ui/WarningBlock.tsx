@@ -82,7 +82,7 @@ export default function DebtWarningBlock() {
                 viewport={{ once: true }}
                 custom={i}
                 variants={variants}
-                className="space-y-2"
+                className="space-y-2 pt-[16px] pb-[16px] pl-[24px] border-l-[4px] first:border-[#2e90fa] border-[#f5f5f5] mb-0"
               >
                 <h3 className="font-[600] text-[18px] leading-[156%] text-[#181d27]">
                   {block.title}
@@ -102,7 +102,7 @@ export default function DebtWarningBlock() {
               viewport={{ once: true }}
               custom={5}
               variants={variants}
-              className="pt-4"
+              className="mt-[32px] flex flex-col gap-[20px]"
             >
               <p className="font-[600] text-[18px] leading-[156%] text-[#181d27] underline">
                 ВАЖНО ПОНИМАТЬ:

@@ -55,7 +55,9 @@ const Statictic = () => {
       </motion.h4>
 
       {/* Сетка статистики */}
-      <div className="mt-[64px] grid grid-cols-2 gap-4 w-full max-w-[1280px] mx-auto max-lg:grid-cols-1 max-lg:m-auto">
+      <div className="relative mt-[64px] grid grid-cols-2 gap-4 w-full max-w-[1280px] mx-auto max-lg:grid-cols-1 max-lg:m-auto ">
+        <div className="absolute top-0 bottom-0 left-1/2 w-px bg-[#e9eaeb] max-lg:hidden"></div>
+      <div className="absolute left-0 right-0 top-1/2 h-px bg-[#e9eaeb] max-lg:hidden"></div>
         {stats.map((stat, index) => (
           <motion.div
             key={index}
