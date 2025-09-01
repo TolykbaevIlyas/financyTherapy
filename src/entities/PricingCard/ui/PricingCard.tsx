@@ -21,7 +21,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="text-[30px] font-[600] leading-[127%] mb-8 text-[#181d27] max-lg:hidden"
+        className={`${ title == 'ЧЕСТНОЕ ЦЕНООБРАЗОВАНИЕ БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ:' ? 'text-[30px]' : 'text-[36px] '} font-[600] leading-[127%] mb-8 text-[#181d27] max-lg:hidden`}
       >
         {title}
       </motion.h2>

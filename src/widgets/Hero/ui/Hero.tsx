@@ -49,12 +49,12 @@ const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className='flex flex-col gap-[24px] max-w-[1024px] w-full m-auto'
+            className='flex flex-col gap-[24px] max-w-[1124px] w-full m-auto'
           >
             <h1 className='text-[60px] font-semibold max-lg:text-[30px] max-lg:text-center max-lg:max-w-[323px] max-lg:m-auto'>
               СНИЗЬ ЕЖЕМЕСЯЧНЫЕ ПЛАТЕЖИ НА 40-80%
             </h1>
-            <p className='max-w-[850px] w-full m-auto text-[20px] font-[400] text-[#535862] max-lg:hidden'>
+            <p className='max-w-[870px] w-full m-auto text-[20px] font-[400] text-[#535862] max-lg:hidden'>
               Комплексная диагностика финансового состояния и персональный план действий. 
               Как врач-терапевт ставит диагноз — так мы анализируем ваши финансы.
             </p>
@@ -68,7 +68,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
-              className='flex flex-col gap-[20px] max-w-[438px] w-full max-lg:m-auto'
+              className='flex flex-col gap-[20px] max-w-[512px] w-full max-lg:m-auto'
             >
               <img className='max-w-[48px] w-full h-[49px]' src='/assets/images/Logo.svg' alt="Logo" />
               <h3 className='text-[30px] leading-[127%] text-[#181d27] text-left font-[600] max-lg:hidden'>

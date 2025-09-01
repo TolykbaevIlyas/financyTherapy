@@ -42,7 +42,7 @@ const Checklist = ({ items }: ChecklistProps) => {
                     {item.textM}
                   </span>
                 </>
-              ) : null /* если textM нет — на мобилке ничего не показываем */ }
+              ) : null }
             </div>
           </li>
         )

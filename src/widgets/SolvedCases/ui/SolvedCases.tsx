@@ -15,7 +15,7 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
         viewport={{ once: true, amount: 0.2 }}
         className="flex flex-col gap-[20px] mb-[50px] text-[#000]"
       >
-        <h2 className="text-[32px] font-semibold max-lg:hidden">Примеры решенных ситуаций</h2>
+        <h2 className="text-[36px] font-[600] max-lg:hidden">Примеры решенных ситуаций</h2>
         <h2 className="text-[32px] font-semibold lg:hidden">Решенные ситуации:</h2>
         <p className="text-[20px] font-normal text-[#535862] max-lg:hidden">Разнообразие успешных кейсов</p>
       </motion.div>
