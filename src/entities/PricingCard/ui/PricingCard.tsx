@@ -8,11 +8,12 @@ interface PricingProps {
   plans: IPricingPlan[];
   ctaLabel: string;
   onCtaClick?: () => void;
+  buttons?: boolean;
 }
 
-const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick }: PricingProps) => {
+const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = true }: PricingProps) => {
   return (
-    <section className="text-center py-12">
+    <section className="text-center py-12 pt-[96px]">
 
       {/* Заголовки */}
       <motion.h2
@@ -20,7 +21,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick }: PricingProp
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="text-[36px] font-[600] leading-[122%] mb-8 text-[#181d27] max-lg:hidden"
+        className="text-[30px] font-[600] leading-[127%] mb-8 text-[#181d27] max-lg:hidden"
       >
         {title}
       </motion.h2>
@@ -30,7 +31,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick }: PricingProp
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="text-[30px] font-[600] leading-[122%] mb-8 text-[#181d27] lg:hidden max-w-[295px] w-full m-auto"
+        className="text-[30px] font-[600] leading-[122%] mb-8 text-[#181d27] lg:hidden max-w-[325px] w-full m-auto"
       >
         {titleM}
       </motion.h2>
@@ -51,9 +52,8 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick }: PricingProp
           </motion.div>
         ))}
       </div>
-
-      {/* CTA кнопки */}
-      <motion.button
+        {buttons ? <>
+        <motion.button
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -77,17 +77,50 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick }: PricingProp
 
       {/* Иконки соцсетей */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-        viewport={{ once: true }}
-        className="mt-[48px] flex justify-center gap-[32px]"
-      >
-        <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="wp" />
-        <img className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="tg" />
-        <img className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="vk" />
-        <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
-      </motion.div>
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+  viewport={{ once: true }}
+  className="mt-[48px] flex justify-center gap-[32px]"
+>
+  <a
+    href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="wp" />
+  </a>
+
+  <a
+    href="https://t.me/arkadyshevchenko"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="tg" />
+  </a>
+
+  <a
+    href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="vk" />
+  </a>
+
+  <a
+    href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
+  </a>
+</motion.div>
+</>
+      :  
+      ''
+      }
+      {/* CTA кнопки */}
+      
     </section>
   );
 };

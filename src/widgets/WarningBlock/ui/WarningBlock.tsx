@@ -120,15 +120,15 @@ export default function DebtWarningBlock() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="lg:hidden max-w-[343px] w-full text-left flex flex-col gap-[20px]"
+            className="lg:hidden max-w-[343px] w-full text-left flex flex-col "
           >
-            <div>
+            <div className="border-l-[4px] border-[#2e90fa] pl-[24px] py-[16px]">
               <h3 className="font-[500] text-[18px] leading-[156%] text-[#181d27]">
                 1 МЕСЯЦ:
               </h3>
               <p className="text-[16px] text-[#535862]">+15-30% к долгу</p>
             </div>
-            <div>
+            <div className="border-l-[4px] border-[#f5f5f5] pl-[24px] py-[16px]">
               <h3 className="font-[500] text-[18px] leading-[156%] text-[#181d27]">
                 3 МЕСЯЦА:
               </h3>
@@ -136,7 +136,7 @@ export default function DebtWarningBlock() {
                 Суды, коллекторы, арест счетов
               </p>
             </div>
-            <div>
+            <div className="border-l-[4px] border-[#f5f5f5] pl-[24px] py-[16px]">
               <h3 className="font-[500] text-[18px] leading-[156%] text-[#181d27]">
                 6 МЕСЯЦЕВ:
               </h3>
@@ -144,7 +144,7 @@ export default function DebtWarningBlock() {
                 Опись имущества, проблемы в семье, риск потери работы
               </p>
             </div>
-            <div>
+            <div className="border-l-[4px] border-[#f5f5f5] pl-[24px] py-[16px]"  >
               <h3 className="font-[500] text-[18px] leading-[156%] text-[#181d27]">
                 1 ГОД:
               </h3>
@@ -154,6 +154,22 @@ export default function DebtWarningBlock() {
               </p>
             </div>
           </motion.div>
+
+          <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={5}
+              variants={variants}
+              className="mt-[32px] flex flex-col gap-[20px] lg:hidden"
+            >
+              <p className="font-[600] text-[18px] leading-[156%] text-left text-[#181d27] underline">
+                ВАЖНО:
+              </p>
+              <p className="font-[600] text-[18px] text-left leading-[156%] text-[#181d27]">
+                Чем раньше начнете — тем больше вариантов остается
+              </p>
+        </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -186,7 +202,7 @@ export default function DebtWarningBlock() {
           <h3 className="text-[30px] font-[600] leading-[127%] text-[#181d27] mb-4 max-lg:hidden">
             НЕ ДАЙТЕ ЭТОМУ СЛУЧИТЬСЯ С ВАШЕЙ СЕМЬЕЙ!
           </h3>
-          <button className="max-lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
+          <button className="max-lg:hidden mb-[80px] max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
             НЕ ОТКЛАДЫВАТЬ — ПОЛУЧИТЬ ПЛАН СЕЙЧАС
           </button>
 

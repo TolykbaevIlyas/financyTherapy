@@ -64,7 +64,7 @@ const CalculatorAndDetails = () => {
     });
 
   return (
-    <section className="mt-[80px] text-black">
+    <section className="pt-[96px] text-black max-lg:pt-[64px]">
       <ContainerWrapper>
         {/* Заголовок */}
         <motion.h2
@@ -72,7 +72,7 @@ const CalculatorAndDetails = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center font-[600] text-[36px] leading-[122%] text-[#181d27]"
+          className="text-center font-[600] text-[36px] leading-[122%] text-[#181d27] "
         >
           ПОСЧИТАЙТЕ ПОТЕРИ
         </motion.h2>
@@ -83,7 +83,7 @@ const CalculatorAndDetails = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="bg-white border border-[#e9eaeb] rounded-lg p-6 mt-8 max-w-[768px] w-full mx-auto"
+          className="bg-white border border-[#e9eaeb] rounded-lg p-6 mt-[64px] max-w-[768px] w-full mx-auto"
         >
           <h3 className="text-[30px] max-w-[670px] w-full text-left font-[600] leading-[127%] mb-4 text-[#181d27]">
             Узнайте, сколько денег вы теряете каждый день промедления

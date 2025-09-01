@@ -4,7 +4,7 @@ import ContainerWrapper from '../../../shared/ui/ContainerWrapper'
 
 const WorkSteps = () => {
   return (
-    <section className="mt-[70px]">
+    <section className="mt-[96px] ">
       <ContainerWrapper>
         <div>
           {/* Заголовки */}

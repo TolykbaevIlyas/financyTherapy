@@ -32,7 +32,7 @@ const Statictic = () => {
   ];
 
   return (
-    <section className='mt-[96px]'>
+    <section className='mt-[96px] '>
       {/* Заголовки */}
       <motion.h4
         initial={{ opacity: 0, y: -30 }}
@@ -90,7 +90,7 @@ const Statictic = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true }}
-        className="mt-[96px] cursor-pointer bg-[#1570ef] max-w-[1152px] w-full h-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition max-lg:hidden"
+        className="mt-[96px] mb-[96px] cursor-pointer bg-[#1570ef] max-w-[1152px] w-full h-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition max-lg:hidden"
       >
         ПОЛУЧИТЬ ПЛАН ДЛЯ МОЕЙ СИТУАЦИИ
       </motion.button>

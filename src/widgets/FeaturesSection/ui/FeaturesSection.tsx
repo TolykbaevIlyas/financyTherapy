@@ -16,7 +16,7 @@ const FeaturesSection = ({ title, card, className }: IFeature) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
-          className="text-4xl font-semibold text-[#181D27]"
+          className="text-[30px] font-semibold text-[#181D27]"
         >
           {title}
         </motion.h2>
