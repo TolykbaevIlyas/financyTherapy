@@ -40,7 +40,12 @@ const Footer = () => {
                   <li className="text-[16px] font-[400px] text-[#535862]">
                     <a href="">Круглосуточная экстренная помощь:</a>
                     <li className="text-[16px] font-[400px] text-[#535862]">
-                      <a href="">WhatsApp | Telegram | VK | MAX</a>
+                      <a href="">
+                        <span className="underline">WhatsApp</span> |{' '}
+                        <span className="underline">Telegram</span> |{' '}
+                        <span className="underline">VK</span> |{' '}
+                        <span className="underline">MAX</span>
+                      </a>
                     </li>
                   </li>
                   <li className="text-[16px] font-[400px] text-[#535862]">
@@ -58,7 +63,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex lg:flex-row flex-col justify-between gap-[32px] lg:gap-0  py-[33px] border-t-1 border-[#E9EAEB] w-full">
+            <div className="flex lg:flex-row flex-col items-center justify-between gap-[32px] lg:gap-0  py-[33px] border-t-1 border-[#E9EAEB] w-full">
               <div className="">
                 <img src={logo} alt="" />
               </div>
