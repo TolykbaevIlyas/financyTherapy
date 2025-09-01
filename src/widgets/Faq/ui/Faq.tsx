@@ -33,7 +33,7 @@ const faqItems = [
 
 const Faq = () => {
   return (
-    <section className="mt-[96px] bg-[#fafafa] -mx-[20px] px-[20px] py-[96px] mb-[96px] max-lg:mb-[64px] max-lg:pb-[64px]">
+    <section className="mt-[96px] bg-[#fafafa]  py-[96px] mb-[96px] max-lg:mb-[64px] max-lg:pb-[64px]">
       <ContainerWrapper>
         <div className="flex flex-col md:flex-row md:gap-[64px]">
           {/* Левая колонка */}
@@ -70,7 +70,7 @@ const Faq = () => {
           </div>
 
           {/* Правая колонка (desktop) */}
-          <div className="flex flex-col flex-wrap gap-[32px] h-[844px] items-start max-lg:hidden">
+          <div className="flex flex-col flex-wrap gap-[32px] h-[844px] items-start max-lg:hidden ">
             {faqItems.map((item, idx) => (
               <motion.div
                 key={idx}

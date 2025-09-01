@@ -25,25 +25,25 @@ export const featuresAnalyze: ICard[] = [
     icon: <Dolg />,
     title: 'Все долговые обязательства (кредиты и займы, микрозаймы, прочие долги)',
     description: '',
-    maxWidth: 'min-w-[268px]',
+    maxWidth: 'max-w-[268px]',
   },
   {
     icon: <Dohod />,
     title: 'Доходы, расходы и семейное положение',
     description: '',
-    maxWidth: 'min-w-[268px]',
+    maxWidth: 'max-w-[268px]',
   },
   {
     icon: <Credit />,
     title: 'Кредитную историю и имущественное положение',
     description: '',
-    maxWidth: 'min-w-[268px]',
+    maxWidth: 'max-w-[268px]',
   },
   {
     icon: <Prioritet />,
     title: 'Ваши приоритеты: что важнее всего сохранить',
     description: '',
-    maxWidth: 'min-w-[268px]',
+    maxWidth: 'max-w-[268px]',
   },
 ];
 
@@ -52,19 +52,19 @@ export const featuresResult = [
     icon: <Snijenie />,
     title: 'Персональную стратегию снижения платежей на 40-80%',
     description: '',
-    maxWidth: 'min-w-[373px]',
+    maxWidth: 'max-w-[373px]',
   },
   {
     icon: <Specialist />,
     title: 'Направление к проверенному специалисту',
     description: '',
-    maxWidth: 'min-w-[373px]',
+    maxWidth: 'max-w-[373px]',
   },
   {
     icon: <Supp />,
     title: 'Поддержку до полного решения проблемы',
     description: '',
-    maxWidth: 'min-w-[373px]',
+    maxWidth: 'max-w-[373px]',
   },
 ];
 
