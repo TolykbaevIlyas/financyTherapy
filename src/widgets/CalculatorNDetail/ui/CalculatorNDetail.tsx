@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 
 const CalculatorAndDetails = () => {
-  const [amount, setAmount] = useState(1000000);
+  const [amount, setAmount] = useState<number | ''>('');
   const [hasMicro, setHasMicro] = useState(false);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -64,7 +64,7 @@ const CalculatorAndDetails = () => {
     });
 
   return (
-    <section className="mt-[80px] text-black">
+    <section className="pt-[96px] text-black max-lg:pt-[64px]">
       <ContainerWrapper>
         {/* Заголовок */}
         <motion.h2
@@ -72,7 +72,7 @@ const CalculatorAndDetails = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center font-[600] text-[36px] leading-[122%] text-[#181d27]"
+          className="text-center font-[600] text-[36px] leading-[122%] text-[#181d27] "
         >
           ПОСЧИТАЙТЕ ПОТЕРИ
         </motion.h2>
@@ -83,7 +83,7 @@ const CalculatorAndDetails = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="bg-white border border-[#e9eaeb] rounded-lg p-6 mt-8 max-w-[768px] w-full mx-auto"
+          className="bg-white border border-[#e9eaeb] rounded-lg p-6 mt-[64px] max-w-[768px] w-full mx-auto"
         >
           <h3 className="text-[30px] max-w-[670px] w-full text-left font-[600] leading-[127%] mb-4 text-[#181d27]">
             Узнайте, сколько денег вы теряете каждый день промедления
@@ -94,15 +94,24 @@ const CalculatorAndDetails = () => {
           <input
             type="number"
             value={amount}
+            placeholder='1 000 000 ₽'
             onChange={(e) => setAmount(Number(e.target.value))}
             className="w-full border border-[#e9eaeb] rounded-md px-3 py-2 mb-4"
           />
-          <label className="flex items-center mb-4 gap-2">
+          <label className="flex items-center gap-2 cursor-pointer">
             <input
               type="checkbox"
               checked={hasMicro}
               onChange={() => setHasMicro(!hasMicro)}
+              className="hidden peer"
             />
+            <span className="w-5 h-5 border border-[#e9eaeb] rounded-sm flex items-center justify-center peer-checked:bg-[#1570ef] peer-checked:border-[#1570ef]">
+              {hasMicro && (
+                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              )}
+            </span>
             Есть микрозаймы
           </label>
 
@@ -175,15 +184,54 @@ const CalculatorAndDetails = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="border-b border-[#e9eaeb] py-4 cursor-pointer"
+              className="border-b border-[#e9eaeb] last:border-0 pt-[24px] pb-[32px] cursor-pointer"
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
-              <div className="flex justify-between text-left">
-                <p className="font-[600] leading-[150%] text-[#181d27] text-[18px] ">
-                  {item.question}
-                </p>
-                {openIndex === index ? <ChevronUp /> : <ChevronDown />}
-              </div>
+              <div className="flex justify-between items-center text-left">
+              <p className="font-[600] leading-[150%] text-[#181d27] text-[18px]">
+                {item.question}
+              </p>
+              <button
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                className="w-[28px] h-[28px] flex items-center justify-center rounded-full transition"
+              >
+                {openIndex === index ? (
+                  // Минус
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 11.333H15M21 11.333C21 16.8559 16.5228 21.333 11 21.333C5.47715 21.333 1 16.8559 1 11.333C1 5.81016 5.47715 1.33301 11 1.33301C16.5228 1.33301 21 5.81016 21 11.333Z"
+                      stroke="#A4A7AE"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                ) : (
+                  // Плюс
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 7.33301V15.333M7 11.333H15M21 11.333C21 16.8559 16.5228 21.333 11 21.333C5.47715 21.333 1 16.8559 1 11.333C1 5.81016 5.47715 1.33301 11 1.33301C16.5228 1.33301 21 5.81016 21 11.333Z"
+                      stroke="#A4A7AE"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.p
