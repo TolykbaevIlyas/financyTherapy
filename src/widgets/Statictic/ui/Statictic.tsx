@@ -15,7 +15,7 @@ const Statictic = () => {
     },
     {
       value: "от 40% до 80%",
-      text: <>типичная экономия <br/>ежемесячных платежей</>,
+      text: <>типичная экономия ежемесячных платежей</>,
       textMobile: "типичная экономия",
       desktopOnly: true,
     },
@@ -25,8 +25,8 @@ const Statictic = () => {
       desktopOnly: true,
     },
     {
-      value: "40% - 80%",
-      text: "типичная экономия",
+      value: "40-80%",
+      textMobile: "типичная экономия",
       mobileOnly: true,
     },
   ];
@@ -85,7 +85,12 @@ const Statictic = () => {
       </div>
 
       {/* CTA кнопки */}
-      <motion.button
+      <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
@@ -94,16 +99,24 @@ const Statictic = () => {
       >
         ПОЛУЧИТЬ ПЛАН ДЛЯ МОЕЙ СИТУАЦИИ
       </motion.button>
-
-      <motion.button
+              </a>
+      
+<a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true }}
-        className="mt-[96px] cursor-pointer bg-[#1570ef] max-w-[1152px] w-full h-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition lg:hidden"
+        className="mt-[96px] mb-[100px] cursor-pointer bg-[#1570ef] max-w-[1152px] w-full h-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition lg:hidden"
       >
         ПОЛУЧИТЬ РЕЗУЛЬТАТ
       </motion.button>
+              </a>
+      
     </section>
   );
 };

@@ -106,15 +106,15 @@ const CalculatorAndDetails = () => {
             />
             <span className="w-5 h-5 border border-[#e9eaeb] rounded-sm flex items-center justify-center peer-checked:bg-[#1570ef] peer-checked:border-[#1570ef]">
               {hasMicro && (
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                <svg width="12" height="10" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 1L3.5 6.5L1 4" stroke="white" stroke-width="1.6666" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               )}
             </span>
-            Есть микрозаймы
+            <p className='text-[14px] font-[400] text-[#535862]'>Есть микрозаймы</p>
           </label>
 
-          <div className="text-[16px] leading-[156%] space-y-2 flex flex-col gap-[24px]">
+          <div className="text-[16px] leading-[156%] space-y-2 flex flex-col gap-[24px] mt-[32px]">
             <p className="text-left text-[18px] leading-[156%] font-[500] text-[#181d27]">
               Ваши ежедневные потери:
             </p>
@@ -154,7 +154,12 @@ const CalculatorAndDetails = () => {
         </motion.div>
 
         {/* Кнопка калькулятора */}
-        <motion.button
+        <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                 <motion.button
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -163,6 +168,8 @@ const CalculatorAndDetails = () => {
         >
           ОСТАНОВИТЬ РОСТ ДОЛГА
         </motion.button>
+              </a>
+       
 
         {/* FAQ */}
         <motion.h2
@@ -249,15 +256,26 @@ const CalculatorAndDetails = () => {
         </div>
 
         {/* Кнопка FAQ */}
-        <motion.button
+        <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
+          style={{
+    boxShadow:
+      "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
+  }}
           className="max-lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block"
         >
           УТОЧНИТЬ ДЕТАЛИ
         </motion.button>
+              </a>
+        
       </ContainerWrapper>
     </section>
   );

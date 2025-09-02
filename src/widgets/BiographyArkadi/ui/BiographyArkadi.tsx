@@ -7,16 +7,16 @@ import { motion } from 'framer-motion';
 const BiographyArkadi = () => {
   return (
     <ContainerWrapper>
-      <div className="bg-[#1849A9] flex flex-col-reverse md:flex-row justify-between rounded-[24px] overflow-hidden">
+      <div className="bg-[#1849A9] flex flex-col-reverse md:flex-row gap-[64px] rounded-[24px] overflow-hidden max-w-[1216px] w-full">
         {/* Контент */}
         <motion.div
-          className="flex flex-col gap-[48px]  p-[24px]  justify-start md:p-[64px] max-w-[700px] w-full text-white"
+          className="flex flex-col gap-[40px] justify-start md:py-[64px] md:pl-[64px] max-w-[700px] w-full text-white"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col gap-[20px] text-start">
+          <div className="flex flex-col gap-[20px] text-start max-lg:max-w-[295px] max-lg:m-auto">
             <motion.h2
               className="text-[28px] md:text-[36px] font-semibold"
               initial={{ opacity: 0, y: -20 }}
@@ -27,7 +27,7 @@ const BiographyArkadi = () => {
               Аркадий Шевченко
             </motion.h2>
             <motion.p
-              className="text-[16px] md:text-[20px] font-normal leading-[24px] md:leading-[30px]"
+              className="max-w-[648px] w-full text-[16px] -pr-[40px] md:text-[20px] font-normal leading-[24px] md:leading-[30px]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
@@ -44,11 +44,40 @@ const BiographyArkadi = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.6, duration: 0.6 }}
               viewport={{ once: true }}
-              className="max-w-[305px] w-full"
+              className="max-w-[305px] w-full max-lg:hidden"
             >
-              <Button type="primary" className="w-full">
+              <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              ><Button type="primary" className="w-full !h-[48px] !font-[600] !text-[16px]" style={{
+    boxShadow:
+      "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
+  }}>
                 ПОЛУЧИТЬ ПОМОЩЬ ЭКСПЕРТА
-              </Button>
+              </Button></a>
+              
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="max-w-[295px] w-full lg:hidden m-auto mb-[48px]"
+            >
+              <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+    boxShadow:
+      "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
+  }}
+              ><Button type="primary" className="w-full !h-[48px] !font-[600] !text-[16px]">
+                ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+              </Button></a>
+              
             </motion.div>
           </div>
         </motion.div>
