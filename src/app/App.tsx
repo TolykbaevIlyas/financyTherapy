@@ -153,44 +153,50 @@ function App() {
 
             {/* Иконки соцсетей */}
             <motion.div
-  initial={{ opacity: 0, scale: 0.9 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-  viewport={{ once: true }}
-  className="mt-[48px] flex justify-center gap-[32px] mb-[64px]"
->
-  <a
-    href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="wp" />
-  </a>
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+              viewport={{ once: true }}
+              className="mt-[48px] flex justify-center gap-[32px] mb-[64px]"
+            >
+              <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="wp" />
+              </a>
 
-  <a
-    href="https://t.me/arkadyshevchenko"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="tg" />
-  </a>
+              <a
+                href="https://t.me/arkadyshevchenko"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="tg" />
+              </a>
 
-  <a
-    href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="vk" />
-  </a>
+              <a
+                href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="vk" />
+              </a>
 
-  <a
-    href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
-  </a>
-</motion.div>
+              <a
+                href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
+              </a>
+            </motion.div>
+            <motion.div className='text-[#181d27] mt-[64px] mb-[96px] text-[18px] font-[600] leading-[156%] max-lg:hidden'>
+              <strong>Помните:</strong> Каждый день бездействия увеличивает размер и тяжесть проблемы. Начните решение сегодня.
+            </motion.div>
+            <motion.div className='max-w-[343px] w-full m-auto text-[#181d27] mt-[64px] mb-[96px] text-[18px] font-[400] leading-[156%] lg:hidden'>
+                Каждый день бездействия увеличивает тяжесть проблемы.
+            </motion.div>
           </div>
         </main>
 

@@ -4,9 +4,9 @@ import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 
 const LikeMedicine = () => {
   return (
-    <div>
+    <div className="">
       <ContainerWrapper>
-        <div className='flex flex-col'>
+        <div className='flex flex-col pt-[96]'>
 
           {/* Заголовки */}
           <motion.div

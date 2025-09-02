@@ -37,7 +37,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
       </motion.h2>
 
       {/* Сетка с тарифами */}
-      <div className="max-w-[1216px] max-lg:m-auto w-full h-[240px] grid mt-[64px] max-lg:justify-center max-lg:text-center max-lg:grid-cols-1 grid-cols-3 items-center text-center bg-[#fafafa] gap-6 mx-auto mb-8 max-lg:h-[552px] max-lg:max-w-[375px]">
+      <div className="max-w-[1216px] rounded-[16px] max-lg:m-auto w-full h-[240px] grid mt-[64px] max-lg:justify-center max-lg:text-center max-lg:grid-cols-1 grid-cols-3 items-center text-center bg-[#fafafa] gap-6 mx-auto mb-8 max-lg:h-[552px] max-lg:max-w-[375px]">
         {plans.map((plan, index) => (
           <motion.div
             key={plan.id}
@@ -81,7 +81,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
   whileInView={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
   viewport={{ once: true }}
-  className="mt-[48px] flex justify-center gap-[32px]"
+  className="mt-[48px] flex justify-center gap-[32px] mb-[264px]"
 >
   <a
     href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
