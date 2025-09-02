@@ -129,27 +129,40 @@ function App() {
               title="СРАВНИТЕ:"
               card={featuresCompareMobile}
             />
-            <motion.button
+            <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
               
-              className="max-lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+              className="max-lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[64px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
             >
               ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН РЕШЕНИЯ
             </motion.button>
-
-            <motion.button
+              </a>
+            
+<a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
               
-              className="lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[48px] mt-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+              className="lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[64px] mt-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
             >
-              ПОЛУЧИТЬ ПЛАН
+              ПОЛУЧИТЬ ПЛАН СЕЙЧАС
             </motion.button>
+              </a>
+            
 
             {/* Иконки соцсетей */}
             <motion.div
@@ -191,7 +204,7 @@ function App() {
                 <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
               </a>
             </motion.div>
-            <motion.div className='text-[#181d27] mt-[64px] mb-[96px] text-[18px] font-[600] leading-[156%] max-lg:hidden'>
+            <motion.div className='text-[#181d27] mt-[64px] mb-[96px] text-[18px] font-[400] leading-[156%] max-lg:hidden'>
               <strong>Помните:</strong> Каждый день бездействия увеличивает размер и тяжесть проблемы. Начните решение сегодня.
             </motion.div>
             <motion.div className='max-w-[343px] w-full m-auto text-[#181d27] mt-[64px] mb-[96px] text-[18px] font-[400] leading-[156%] lg:hidden'>

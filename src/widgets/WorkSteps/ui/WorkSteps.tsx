@@ -151,7 +151,7 @@ const WorkSteps = () => {
                 <h6 className='text-[#181d27] font-[600] text-[18px] leading-[156%] text-left max-lg:hidden'>
                   {step.desktopTitle}
                 </h6>
-                <h6 className='text-[#181d27] font-[600] text-[18px] leading-[156%] lg:hidden'>
+                <h6 className='text-[#181d27] font-[600] text-left text-[18px] leading-[156%] lg:hidden'>
                   {step.mobileTitle}
                 </h6>
                 {step.content}
@@ -160,7 +160,12 @@ const WorkSteps = () => {
           </div>
 
           {/* Кнопка */}
-          <motion.button
+          <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -169,6 +174,8 @@ const WorkSteps = () => {
           >
             НАЧАТЬ РЕШЕНИЕ ПРОБЛЕМЫ
           </motion.button>
+              </a>
+          
         </div>
       </ContainerWrapper>
     </section>

@@ -1,5 +1,4 @@
-'use client'; // если Next.js 13+
-import { motion } from 'framer-motion';
+
 import type { CardProps } from '../../../entities/CardSolvedCases/ui/CardSolvedCases';
 import CardSolvedCases from '../../../entities/CardSolvedCases/ui/CardSolvedCases';
 import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
@@ -8,17 +7,13 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
   return (
     <ContainerWrapper>
       {/* Заголовки */}
-      <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.2 }}
+      <div
         className="flex flex-col gap-[20px] mb-[50px] text-[#000]"
       >
         <h2 className="text-[36px] font-[600] max-lg:hidden">Примеры решенных ситуаций</h2>
         <h2 className="text-[32px] font-semibold lg:hidden">Решенные ситуации:</h2>
         <p className="text-[20px] font-normal text-[#535862] max-lg:hidden">Разнообразие успешных кейсов</p>
-      </motion.div>
+      </div>
 
       {/* Сетка карточек */}
       <div className="relative border border-b-[#E9EAEB] pb-[64px]">
@@ -35,16 +30,8 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
     "
         >
           {card.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: 'easeOut',
-                delay: index * 0.2,
-              }}
-              viewport={{ once: true, amount: 0.2 }}
               className={index % 3 === 1 ? 'lg:-translate-y-[32px] -translate-y-0' : ''}
             >
               <CardSolvedCases
@@ -52,7 +39,7 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
                 description={item.description}
                 account={item.account}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
 

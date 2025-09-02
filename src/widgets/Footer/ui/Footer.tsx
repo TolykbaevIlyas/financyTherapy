@@ -64,7 +64,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex lg:flex-row flex-col items-center justify-between gap-[32px] lg:gap-0  py-[33px] border-t-1 border-[#E9EAEB] w-full">
-              <div className="">
+              <div className="mr-auto">
                 <img src={logo} alt="" />
               </div>
               <div className="text-start">

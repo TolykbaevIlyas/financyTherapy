@@ -202,16 +202,33 @@ export default function DebtWarningBlock() {
           <h3 className="text-[30px] font-[600] leading-[127%] text-[#181d27] mb-4 max-lg:hidden">
             НЕ ДАЙТЕ ЭТОМУ СЛУЧИТЬСЯ С ВАШЕЙ СЕМЬЕЙ!
           </h3>
-          <button className="max-lg:hidden mb-[80px] max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
+          <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+    boxShadow:
+      "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
+  }}
+              ><button className="max-lg:hidden mb-[80px] max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
             НЕ ОТКЛАДЫВАТЬ — ПОЛУЧИТЬ ПЛАН СЕЙЧАС
-          </button>
+          </button></a>
+          
 
           <h3 className="lg:hidden text-[30px] font-[600] leading-[127%] text-[#181d27] mb-4 ">
             НАЧНИТЕ РЕШЕНИЕ СЕГОДНЯ!
           </h3>
-          <button className="lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
+          <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              > <button style={{
+    boxShadow:
+      "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
+  }} className="lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
             ПОЛУЧИТЬ ПЛАН СЕЙЧАС
-          </button>
+          </button></a>
+         
         </motion.div>
       </ContainerWrapper>
     </section>

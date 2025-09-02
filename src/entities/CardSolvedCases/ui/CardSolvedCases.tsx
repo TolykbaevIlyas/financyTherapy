@@ -47,14 +47,14 @@ const CardSolvedCases = ({ title, description, account, className }: CardProps) 
                 Читать дальше &gt;&gt;
               </button>
             )}
-            {expanded && (
+            {/* {expanded && (
               <button
                 onClick={() => setExpanded(false)}
                 className="text-blue-600 text-sm font-medium mt-1"
               >
                 Свернуть
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </div>

@@ -127,24 +127,40 @@ const Faq = () => {
 
         {/* Кнопки */}
         <div className='w-full flex justify-end'>
-          <motion.button
+          <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex justify-end max-lg:hidden"
+              >
+                <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-[64px] w-full max-w-[792px] h-[48px] bg-[#1570ef] rounded-lg text-white font-semibold hover:bg-blue-700 transition  block max-lg:hidden"
+            className="mt-[64px] w-full max-w-[792px] h-[48px] bg-[#1570ef] rounded-lg text-white font-semibold hover:bg-blue-700 transition  block "
           >
             ПОЛУЧИТЬ ОТВЕТ НА МОЙ ВОПРОС
           </motion.button>
-          <motion.button
+              </a>
+          
+          <a
+                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex justify-center m-auto lg:hidden"
+              >
+                <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-[64px] w-full max-w-[792px] h-[48px] bg-[#1570ef] rounded-lg text-white font-semibold hover:bg-blue-700 transition  block lg:hidden"
+            className="mt-[64px] w-full max-w-[792px] h-[48px] bg-[#1570ef] rounded-lg text-white font-semibold hover:bg-blue-700 transition  block "
           >
             ЗАДАТЬ ВОПРОС
           </motion.button>
+              </a>
+          
         </div>
       </ContainerWrapper>
     </section>
