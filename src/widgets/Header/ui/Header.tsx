@@ -15,7 +15,7 @@ const Header = () => {
                 href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
-              ><Button className="w-full !h-[40px] !font-[600] font-[Inter]" type="primary" >
+              ><Button className="w-full !h-[40px] !font-[600] font-[Inter] hover:!bg-[#175CD3]" type="primary" >
                 Пройти диагностику
               </Button></a>
               
