@@ -200,8 +200,9 @@ function App() {
                 href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4"
                 target="_blank"
                 rel="noopener noreferrer"
+                className='flex'
               >
-                <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
+                <img className="cursor-pointer " src="/assets/images/maxLogo.svg" alt="max"/>
               </a>
             </motion.div>
             <motion.div className='text-[#181d27] mt-[64px] mb-[96px] text-[18px] font-[400] leading-[156%] max-lg:hidden'>

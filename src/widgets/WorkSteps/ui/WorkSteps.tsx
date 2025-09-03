@@ -49,7 +49,7 @@ const WorkSteps = () => {
                     <h6 className='text-[#181d27] font-[500] text-left underline text-[18px] leading-[156%] max-lg:hidden'>
                       Что нужно будет предоставить:
                     </h6>
-                    <ul className='text-[#535862] text-[16px] font-[400] text-left leading-[150%] list-disc max-lg:hidden'>
+                    <ul className='text-[#535862] ml-[20px] text-[16px] font-[400] text-left leading-[150%] list-disc max-lg:hidden'>
                       <li>Информацию о всех долговых обязательствах</li>
                       <li>Данные о доходах, расходах, семейном положении</li>
                       <li>Сведения о кредитной истории и имуществе</li>

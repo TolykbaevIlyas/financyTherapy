@@ -41,10 +41,10 @@ const Footer = () => {
                     <a href="">Круглосуточная экстренная помощь:</a>
                     <li className="text-[16px] font-[400px] text-[#535862]">
                       <a href="">
-                        <span className="underline">WhatsApp</span> |{' '}
-                        <span className="underline">Telegram</span> |{' '}
-                        <span className="underline">VK</span> |{' '}
-                        <span className="underline">MAX</span>
+                        <span className="underline"><a href='https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0'>WhatsApp</a></span> |{' '}
+                        <span className="underline"><a href="https://t.me/arkadyshevchenko">Telegram</a></span> |{' '}
+                        <span className="underline"><a href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz">VK</a></span> |{' '}
+                        <span className="underline"><a href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4">MAX</a></span>
                       </a>
                     </li>
                   </li>

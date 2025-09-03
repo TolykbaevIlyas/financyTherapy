@@ -44,13 +44,13 @@ const SolvedCases = ({ card }: { card: CardProps[] }) => {
         </div>
 
         {/* Градиент всегда внизу */}
-        <div
+        {/* <div
           className="
       pointer-events-none absolute bottom-0 left-0 w-full 
       h-[320px] bg-gradient-to-t from-white to-transparent
     "
-        />
-      </div>
+        />*/}
+      </div> 
     </ContainerWrapper>
   );
 };
