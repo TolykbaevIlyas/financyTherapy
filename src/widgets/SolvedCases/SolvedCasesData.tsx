@@ -1,8 +1,5 @@
-import { Andrei } from '../../shared/assets/icons/Andrei';
 import Avatar from '../../shared/assets/icons/Avatar';
-import Marina from '../../shared/assets/icons/Marina';
 import Olga from '../../shared/assets/icons/Olga';
-import Ula from '../../shared/assets/icons/Ula';
 
 export const featuresSolvedCases = [
   {
