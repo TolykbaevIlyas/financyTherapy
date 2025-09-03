@@ -13,7 +13,7 @@ interface PricingProps {
 
 const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = true }: PricingProps) => {
   return (
-    <section className="text-center py-12 pt-[96px]">
+    <section className={`text-center py-12  ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'pt-[10px]' : 'pt-[96px]  '} `}>
 
       {/* Заголовки */}
       <motion.h2
@@ -67,7 +67,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
     boxShadow:
       "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
   }}
-        className="max-lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[48px] mt-[160px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+        className="max-lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[48px] mt-[80px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
       >
         {ctaLabel}
       </motion.button></a>
@@ -97,7 +97,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
   whileInView={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
   viewport={{ once: true }}
-  className="mt-[48px] flex justify-center gap-[32px] mb-[264px]"
+  className={`mt-[48px] flex justify-center gap-[32px]   ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'mb-[50px]' : 'mb-[264px]'}`}
 >
   <a
     href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
@@ -127,6 +127,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
     href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4"
     target="_blank"
     rel="noopener noreferrer"
+    className="flex"
   >
     <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
   </a>

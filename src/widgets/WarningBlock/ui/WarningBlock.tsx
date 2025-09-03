@@ -206,11 +206,12 @@ export default function DebtWarningBlock() {
                 href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="cursor-pointer"
                 style={{
     boxShadow:
       "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
   }}
-              ><button className="max-lg:hidden mb-[80px] max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
+              ><button className="cursor-pointer max-lg:hidden mb-[80px] max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block">
             НЕ ОТКЛАДЫВАТЬ — ПОЛУЧИТЬ ПЛАН СЕЙЧАС
           </button></a>
           

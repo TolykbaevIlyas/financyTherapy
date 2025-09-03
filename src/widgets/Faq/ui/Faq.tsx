@@ -62,7 +62,7 @@ const Faq = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className=" text-left text-[30px] font-[600] text-[#181d27] leading-[122%] lg:hidden"
+                className=" text-left mt-[10px] text-[30px] font-[600] text-[#181d27] leading-[122%] lg:hidden"
               >
                 ВАШИ СОМНЕНИЯ
               </motion.h2>

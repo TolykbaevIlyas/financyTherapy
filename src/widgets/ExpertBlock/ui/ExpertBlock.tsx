@@ -119,7 +119,7 @@ export default function ExpertBlock() {
 
           {/* Mobile список */}
           <div className="lg:hidden">
-            <h3 className="text-[24px] md:text-xl font-bold text-[#181d27] mb-4 text-left">
+            <h3 className="text-[24px] md:text-xl mt-[20px] font-bold text-[#181d27] mb-4 text-left">
               Почему мне можно доверять:
             </h3>
             <ul className="space-y-3 text-gray-700 flex flex-col gap-[20px] font-[700]">

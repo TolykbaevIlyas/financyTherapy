@@ -39,7 +39,7 @@ const Hero = () => {
 ];
 
   return (
-    <section className="text-black mt-[96px] w-full">
+    <section className="text-black pt-[200px] w-full max-lg:pt-[130px]">
       <ContainerWrapper>
         <div className='flex flex-col gap-[64px] max-lg:gap-[48px]'>
 
@@ -51,7 +51,7 @@ const Hero = () => {
             viewport={{ once: true, amount: 0.2 }}
             className='flex flex-col gap-[24px] max-w-[1124px] w-full m-auto'
           >
-            <h1 className='text-[60px] font-semibold max-lg:text-[30px] max-lg:text-center max-lg:max-w-[323px] max-lg:m-auto'>
+            <h1 className='text-[60px] font-semibold max-lg:text-[30px] max-lg:text-center max-lg:max-w-[343px] max-lg:m-auto'>
               СНИЗЬ ЕЖЕМЕСЯЧНЫЕ ПЛАТЕЖИ НА 40-80%
             </h1>
             <p className='max-w-[870px] w-full m-auto text-[20px] font-[400] text-[#535862] max-lg:hidden'>
