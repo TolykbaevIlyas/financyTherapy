@@ -70,13 +70,13 @@ const Footer = () => {
               <div className="text-start">
                 <ul className="flex lg:flex-row flex-col gap-[12px] lg:gap-[24px]">
                   <li className="text-[16px] font-[400px] text-[#717680] hover:text-[#175CD3]">
-                    <a href="/public/assets/docs/Согласие на обработку персональных данных.pdf" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a>
+                    <a href="/assets/docs/Согласие на обработку персональных данных.pdf" target="_blank" rel="noopener noreferrer">Согласие на обработку персональных данных</a>
                   </li>
                   <li className="text-[16px] font-[400px] text-[#717680] hover:text-[#175CD3]">
-                    <a href="/public/assets/docs/Политика обработки персональных данных.pdf" target="_blank" rel="noopener noreferrer">Политика обработки персональных данных</a>
+                    <a href="/assets/docs/Политика обработки персональных данных.pdf" target="_blank" rel="noopener noreferrer">Политика обработки персональных данных</a>
                   </li>
                   <li className="text-[16px] font-[400px] text-[#717680] hover:text-[#175CD3]">
-                    <a href="/public/assets/docs/Договор-оферта.pdf" target="_blank" rel="noopener noreferrer">Договор-оферта</a>
+                    <a href="/assets/docs/Договор-оферта.pdf" target="_blank" rel="noopener noreferrer">Договор-оферта</a>
                   </li>
                 </ul>
               </div>
