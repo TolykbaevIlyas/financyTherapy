@@ -54,7 +54,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
       </div>
         {buttons ? <>
         <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               ><motion.button
@@ -72,7 +72,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
         {ctaLabel}
       </motion.button></a>
 <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               ><motion.button
@@ -100,7 +100,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
   className={`mt-[48px] flex justify-center gap-[32px]   ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'mb-[50px]' : 'mb-[264px]'}`}
 >
   <a
-    href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+    href="https://wa.me/79535906427"
     target="_blank"
     rel="noopener noreferrer"
   >

@@ -47,7 +47,7 @@ const BiographyArkadi = () => {
               className="max-w-[305px] w-full max-lg:hidden"
             >
               <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               ><Button type="primary" className="w-full !h-[48px] !font-[600] !text-[16px] hover:!bg-[#175CD3]">
@@ -64,7 +64,7 @@ const BiographyArkadi = () => {
               className="max-w-[295px] w-full lg:hidden m-auto mb-[48px]"
             >
               <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

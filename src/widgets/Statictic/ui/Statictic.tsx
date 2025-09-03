@@ -86,7 +86,7 @@ const Statictic = () => {
 
       {/* CTA кнопки */}
       <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -102,7 +102,7 @@ const Statictic = () => {
               </a>
       
 <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               >

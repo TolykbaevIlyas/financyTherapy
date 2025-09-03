@@ -41,7 +41,7 @@ const Footer = () => {
                     Круглосуточная экстренная помощь:
                     <li className="text-[16px] font-[400px] text-[#535862]">
                       <a href="">
-                        <span className="underline hover:text-[#175CD3]"><a href='https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0' target="_blank" rel="noopener noreferrer">WhatsApp</a></span> |{' '}
+                        <span className="underline hover:text-[#175CD3]"><a href='https://wa.me/79535906427' target="_blank" rel="noopener noreferrer">WhatsApp</a></span> |{' '}
                         <span className="underline hover:text-[#175CD3]"><a href="https://t.me/arkadyshevchenko" target="_blank" rel="noopener noreferrer">Telegram</a></span> |{' '}
                         <span className="underline hover:text-[#175CD3]"><a href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz" target="_blank" rel="noopener noreferrer">VK</a></span> |{' '}
                         <span className="underline hover:text-[#175CD3]"><a href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4" target="_blank" rel="noopener noreferrer">MAX</a></span>

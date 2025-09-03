@@ -130,7 +130,7 @@ function App() {
               card={featuresCompareMobile}
             />
             <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -153,7 +153,7 @@ function App() {
               viewport={{ once: true }}
               onClick={() =>
                 window.open(
-                  'https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0',
+                  'https://wa.me/79535906427',
                   '_blank'
                 )
               }
@@ -173,7 +173,7 @@ function App() {
               className="mt-[48px] flex justify-center gap-[32px] mb-[64px]"
             >
               <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               >

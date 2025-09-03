@@ -155,7 +155,7 @@ const CalculatorAndDetails = () => {
 
         {/* Кнопка калькулятора */}
         <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -257,7 +257,7 @@ const CalculatorAndDetails = () => {
 
         {/* Кнопка FAQ */}
         <a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
+                href="https://wa.me/79535906427"
                 target="_blank"
                 rel="noopener noreferrer"
               >
