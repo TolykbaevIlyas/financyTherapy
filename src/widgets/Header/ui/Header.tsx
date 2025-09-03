@@ -13,7 +13,7 @@ const Header = () => {
             <div className="max-w-[177px] max-h-[40px] h-full w-full">
               <Button className="w-full !h-[40px] !font-[600] font-[Inter] hover:!bg-[#175CD3]" type="primary" onClick={() =>
                 window.open(
-                  'https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0',
+                  'https://wa.me/79535906427',
                   '_blank'
                 )
               }>
