@@ -148,7 +148,7 @@ function App() {
             
 <a
                 href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
-                target="_blank"
+                target="_blank" 
                 rel="noopener noreferrer"
               >
                 <motion.button

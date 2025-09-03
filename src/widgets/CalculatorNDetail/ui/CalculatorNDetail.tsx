@@ -199,7 +199,7 @@ const CalculatorAndDetails = () => {
               </p>
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-[28px] h-[28px] flex items-center justify-center rounded-full transition"
+                className="w-[28px] h-[28px] flex items-center justify-center rounded-full transition cursor-pointer"
               >
                 {openIndex === index ? (
                   // Минус
@@ -270,7 +270,7 @@ const CalculatorAndDetails = () => {
     boxShadow:
       "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
   }}
-          className="max-lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block"
+          className="cursor-pointer max-lg:hidden max-w-[768px] w-full mt-6 bg-[#1570ef] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition mx-auto block"
         >
           УТОЧНИТЬ ДЕТАЛИ
         </motion.button>

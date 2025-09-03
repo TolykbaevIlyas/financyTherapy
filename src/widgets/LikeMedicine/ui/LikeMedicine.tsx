@@ -4,9 +4,9 @@ import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 
 const LikeMedicine = () => {
   return (
-    <div className="">
+    <div className="pt-[96px]">
       <ContainerWrapper>
-        <div className='flex flex-col pt-[96]'>
+        <div className='flex flex-col '>
 
           {/* Заголовки */}
           <motion.div
@@ -32,7 +32,7 @@ const LikeMedicine = () => {
           </motion.div>
 
           {/* Сравнение */}
-          <div className='flex justify-center max-lg:flex-col max-lg:m-auto max-lg:gap-[32px]'>
+          <div className='flex justify-center lg:pt-[20px] max-lg:flex-col max-lg:m-auto max-lg:gap-[32px]'>
 
             {/* Левая колонка */}
             <motion.div

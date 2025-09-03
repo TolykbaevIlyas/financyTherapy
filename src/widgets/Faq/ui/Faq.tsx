@@ -131,14 +131,14 @@ const Faq = () => {
                 href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex justify-end max-lg:hidden"
+                className="w-full flex justify-end max-lg:hidden cursor-pointer"
               >
                 <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-[64px] w-full max-w-[792px] h-[48px] bg-[#1570ef] rounded-lg text-white font-semibold hover:bg-blue-700 transition  block "
+            className="mt-[64px] w-full max-w-[792px] h-[48px] bg-[#1570ef] rounded-lg text-white font-semibold hover:bg-blue-700 transition  block cursor-pointer "
           >
             ПОЛУЧИТЬ ОТВЕТ НА МОЙ ВОПРОС
           </motion.button>

@@ -50,10 +50,7 @@ const BiographyArkadi = () => {
                 href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
-              ><Button type="primary" className="w-full !h-[48px] !font-[600] !text-[16px]" style={{
-    boxShadow:
-      "0 1px 2px 0 rgba(10, 13, 18, 0.05), inset 0 -2px 0 0 rgba(10, 13, 18, 0.05), inset 0 0 0 1px rgba(10, 13, 18, 0.18)"
-  }}>
+              ><Button type="primary" className="w-full !h-[48px] !font-[600] !text-[16px] hover:!bg-[#175CD3]">
                 ПОЛУЧИТЬ ПОМОЩЬ ЭКСПЕРТА
               </Button></a>
               
