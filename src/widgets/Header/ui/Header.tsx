@@ -6,7 +6,7 @@ import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 const Header = () => {
   return (
     <>
-      <header className="w-full fixed bg-white z-10" >
+      <header className="w-full fixed bg-white z-10 border-b-[#e9eaeb] border" >
         <ContainerWrapper>
           <div className="flex justify-between px-[14px] items-center py-[13px] rounded-2xl border-0 lg:border-1 w-full border-gray-200  lg:mt-[24px]">
             <img src={logo} alt="Logo" className='max-w-[132px]'/>
