@@ -6,9 +6,9 @@ import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 const Header = () => {
   return (
     <>
-      <header className="w-full fixed bg-white z-10 border-b-[#e9eaeb] border" >
+      <header className="w-full fixed  z-10 max-lg:border-b-[#e9eaeb] border" >
         <ContainerWrapper>
-          <div className="flex justify-between px-[14px] items-center py-[13px] rounded-2xl border-0 lg:border-1 w-full border-gray-200  lg:mt-[24px]">
+          <div className="flex justify-between px-[14px] items-center py-[13px] bg-white rounded-2xl border-0 lg:border-1 w-full border-gray-200  lg:mt-[24px]">
             <img src={logo} alt="Logo" className='max-w-[132px]'/>
             <div className="max-w-[177px] max-h-[40px] h-full w-full">
               <Button className="w-full !h-[40px] !font-[600] font-[Inter] hover:!bg-[#175CD3]" type="primary" onClick={() =>
