@@ -146,22 +146,22 @@ function App() {
             </motion.button>
               </a>
             
-<a
-                href="https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <motion.button
+            <motion.button
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
-              
+              onClick={() =>
+                window.open(
+                  'https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0',
+                  '_blank'
+                )
+              }
               className="lg:hidden cursor-pointer bg-[#1570ef] max-w-[1216px] w-full h-[64px] mt-[48px] text-white rounded-lg font-semibold hover:bg-blue-700 transition"
             >
               ПОЛУЧИТЬ ПЛАН СЕЙЧАС
             </motion.button>
-              </a>
+              
             
 
             {/* Иконки соцсетей */}

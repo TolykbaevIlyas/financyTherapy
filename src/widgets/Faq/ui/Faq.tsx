@@ -33,7 +33,7 @@ const faqItems = [
 
 const Faq = () => {
   return (
-    <section className="mt-[96px] bg-[#fafafa]  py-[96px] mb-[96px] max-lg:mb-[64px] max-lg:pb-[64px]">
+    <section className="mt-[96px] bg-[#fafafa] max-lg:-mx-[15px] max-lg:px-[15px]  py-[96px] mb-[96px] max-lg:mb-[64px] max-lg:pb-[64px]">
       <ContainerWrapper>
         <div className="flex flex-col md:flex-row md:gap-[64px]">
           {/* Левая колонка */}

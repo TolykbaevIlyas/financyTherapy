@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row gap-[32px] lg:gap-0  justify-between items-center text-start my-[64px]">
               <ul className="max-w-[500px] w-full flex flex-col gap-[12px]">
                 <li className="text-[14px] font-[400px] text-[#717680] mb-[5px]">
-                  <a href="">Мы в социальных сетях</a>
+                  Мы в социальных сетях
                 </li>
                 <li className="text-[16px] font-bold text-[#535862] hover:text-[#175CD3]">
                   <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/arkadiyshevchenko/profilecard">Instagram (личные истории и кейсы)</a>
@@ -34,11 +34,11 @@ const Footer = () => {
               </ul>
               <ul className="max-w-[495px] w-full flex flex-col gap-[17px]">
                 <li className="text-[14px] font-[400px] text-[#717680]">
-                  <a href="">Служба поддержки</a>
+                  Служба поддержки
                 </li>
                 <div className="flex flex-col gap-[12px] mb-[30px] ">
                   <li className="text-[16px] font-[400px] text-[#535862]">
-                    <a href="">Круглосуточная экстренная помощь:</a>
+                    Круглосуточная экстренная помощь:
                     <li className="text-[16px] font-[400px] text-[#535862]">
                       <a href="">
                         <span className="underline hover:text-[#175CD3]"><a href='https://api.whatsapp.com/message/CG4TEM4HZBQQA1?autoload=1&app_absent=0' target="_blank" rel="noopener noreferrer">WhatsApp</a></span> |{' '}
@@ -49,17 +49,17 @@ const Footer = () => {
                     </li>
                   </li>
                   <li className="text-[16px] font-[400px] text-[#535862]">
-                    <a href="">Консультации и диагностика:</a> Ежедневно с 8:00 до 23:00 МСК
+                    Консультации и диагностика: Ежедневно с 8:00 до 23:00 МСК
                   </li>
                   <li className="text-[16px] font-[400px] text-[#535862]">
-                    <a href="">Техническая поддержка:</a> cskn24.7@gmail.com
+                    Техническая поддержка: cskn24.7@gmail.com
                   </li>
                 </div>
                 <li className="text-[14px] font-[400px] text-[#717680]">
-                  <a href="">Юридические данные</a>
+                  Юридические данные
                 </li>
                 <li className="text-[16px] font-[400px] text-[#535862]">
-                  <a href="">ООО ЦСКН1 ИНН: 1900013283 ОГРНИП: 1241900000605</a>
+                  ООО ЦСКН1 ИНН: 1900013283 ОГРНИП: 1241900000605
                 </li>
               </ul>
             </div>
