@@ -53,7 +53,7 @@ const CalculatorAndDetails = () => {
   const dailyFine = Number(amount) * fineRate;
   const dailyLoss = dailyInterest + dailyFine;
   const monthlyLoss = dailyLoss * 30;
-  const yearlyLoss = dailyLoss * 12;
+  const yearlyLoss = monthlyLoss * 12;
 
   const formatCurrency = (value: number) =>
     value.toLocaleString('ru-RU', {

@@ -37,7 +37,7 @@ const OurTreatment = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.2 }}
               className='max-w-[343px] w-full h-[343px] lg:hidden m-auto'
-              src='/assets/images/TreatmentMobile.svg'
+              src='/assets/images/TreatmentMobile.png'
               alt="Treatment Mobile"
             />
 

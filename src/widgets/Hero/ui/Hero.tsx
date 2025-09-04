@@ -121,7 +121,7 @@ const Hero = () => {
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: true }}
               className='max-w-[343px] w-full h-[343px] lg:hidden m-auto'
-              src='/assets/images/HeroMobile.svg'
+              src='/assets/images/HeroMobile.png'
               alt="Hero Mobile"
             />
           </div>
