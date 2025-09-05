@@ -4,7 +4,7 @@ import ContainerWrapper from '../../../shared/ui/ContainerWrapper';
 
 const LikeMedicine = () => {
   return (
-    <div className="pt-[96px]">
+    <div className="pt-[96px] max-lg:pt-[30px]">
       <ContainerWrapper>
         <div className='flex flex-col '>
 

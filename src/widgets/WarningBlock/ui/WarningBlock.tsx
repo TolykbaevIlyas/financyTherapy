@@ -179,11 +179,13 @@ export default function DebtWarningBlock() {
             className="md:w-1/2 w-full flex justify-center mt-8 md:mt-0"
           >
             <img
+              loading="lazy"
               src="/assets/images/Warning.svg"
               alt=""
               className="max-w-[576px] w-full h-[752px] max-lg:hidden"
             />
             <img
+              loading="lazy"
               src="/assets/images/WarningMobile.svg"
               alt=""
               className="max-w-[343px] w-full h-[458px] lg:hidden"

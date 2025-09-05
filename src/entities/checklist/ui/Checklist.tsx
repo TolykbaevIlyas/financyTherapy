@@ -19,6 +19,7 @@ const Checklist = ({ items }: ChecklistProps) => {
                 <img
                   src="/assets/images/check-circle.svg"
                   alt="check"
+                  loading="lazy"
                   className="mt-1"
                 />
               )}
@@ -34,6 +35,7 @@ const Checklist = ({ items }: ChecklistProps) => {
               {hasTextMobile ? (
                 <>
                   <img
+                    loading="lazy"
                     src="/assets/images/check-circle.svg"
                     alt="check"
                     className="mt-1"

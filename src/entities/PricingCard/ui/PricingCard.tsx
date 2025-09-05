@@ -13,7 +13,7 @@ interface PricingProps {
 
 const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = true }: PricingProps) => {
   return (
-    <section className={`text-center py-12  ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'pt-[10px]' : 'pt-[96px]  '} `}>
+    <section className={`text-center py-12 max-lg:pb-[10px]  ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'pt-[10px]' : 'pt-[96px]  '} `}>
 
       {/* Заголовки */}
       <motion.h2
@@ -97,7 +97,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
   whileInView={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
   viewport={{ once: true }}
-  className={`mt-[48px] flex justify-center gap-[32px]   ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'mb-[50px]' : 'mb-[264px]'}`}
+  className={`mt-[48px] flex justify-center gap-[32px]   ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'mb-[5 0px]' : 'mb-[264px]'}`}
 >
   <a
     href="https://wa.me/79535906427"
@@ -116,7 +116,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
   </a>
 
   <a
-    href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz"
+    href="https://vk.me/arkadiy.shevchenko"
     target="_blank"
     rel="noopener noreferrer"
   >

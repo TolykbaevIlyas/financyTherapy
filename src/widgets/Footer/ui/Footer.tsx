@@ -26,7 +26,7 @@ const Footer = () => {
                   <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@arkadiy.shevchenko">TikTok (короткие советы)</a>
                 </li>
                 <li className="text-[16px] font-bold text-[#535862] hover:text-[#175CD3]">
-                  <a target="_blank" rel="noopener noreferrer" href="https://vk.com/arkadiy.shevchenko">VK (оф. сообщество Центра снижения кредитной нагрузки №1)</a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://vk.me/arkadiy.shevchenko">VK (оф. сообщество Центра снижения кредитной нагрузки №1)</a>
                 </li>
                 <li className="text-[16px] font-bold text-[#535862] hover:text-[#175CD3]">
                   <a target="_blank" rel="noopener noreferrer" href="https://dzen.ru/arkadiy_shevchenko?share_to=link">Дзен (статьи и истории)</a>
@@ -43,7 +43,7 @@ const Footer = () => {
                       <a href="">
                         <span className="underline hover:text-[#175CD3]"><a href='https://wa.me/79535906427' target="_blank" rel="noopener noreferrer">WhatsApp</a></span> |{' '}
                         <span className="underline hover:text-[#175CD3]"><a href="https://t.me/arkadyshevchenko" target="_blank" rel="noopener noreferrer">Telegram</a></span> |{' '}
-                        <span className="underline hover:text-[#175CD3]"><a href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz" target="_blank" rel="noopener noreferrer">VK</a></span> |{' '}
+                        <span className="underline hover:text-[#175CD3]"><a href="https://vk.me/arkadiy.shevchenko" target="_blank" rel="noopener noreferrer">VK</a></span> |{' '}
                         <span className="underline hover:text-[#175CD3]"><a href="https://max.ru/u/f9LHodD0cOKQfH2_R_J3u2qI8k7Jer4mC5R1QlyvEP9Lp-m2848MFDqDmN4" target="_blank" rel="noopener noreferrer">MAX</a></span>
                       </a>
                     </li>
@@ -58,14 +58,14 @@ const Footer = () => {
                 <li className="text-[14px] font-[400px] text-[#717680]">
                   Юридические данные
                 </li>
-                <li className="text-[16px] font-[400px] text-[#535862]">
-                  ООО ЦСКН1 ИНН: 1900013283 ОГРНИП: 1241900000605
+                <li className="flex gap-[12px] max-lg:flex-col text-[16px] font-[400px] text-[#535862]">
+                  <p>ООО ЦСКН1</p> <p>ИНН: 1900013283</p> <p>ОГРНИП: 1241900000605</p>
                 </li>
               </ul>
             </div>
             <div className="flex lg:flex-row flex-col items-center justify-between gap-[32px] lg:gap-0  py-[33px] border-t-1 border-[#E9EAEB] w-full">
               <div className="mr-auto">
-                <img src={logo} alt="" />
+                <img loading="lazy" src={logo} alt="" />
               </div>
               <div className="text-start">
                 <ul className="flex lg:flex-row flex-col gap-[12px] lg:gap-[24px]">

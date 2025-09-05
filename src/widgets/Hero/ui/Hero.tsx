@@ -32,7 +32,7 @@ const Hero = () => {
   },
   {
     icon: <Specialist />,
-    title: 'Профильный специалист',
+    title: 'Нужный специалист',
     description: '',
     maxWidth: 'min-w-[343px]',
   },

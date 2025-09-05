@@ -88,6 +88,7 @@ const BiographyArkadi = () => {
           viewport={{ once: true }}
         >
           <img
+            loading="lazy"
             className="w-full md:w-auto rounded-t-[24px] md:rounded-t-[0px] md:rounded-r-[24px]"
             src={arcadi}
             alt="Аркадий Шевченко"

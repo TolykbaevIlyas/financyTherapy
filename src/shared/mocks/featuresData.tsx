@@ -132,7 +132,7 @@ export const featuresAnalyzeMobile: ICard[] = [
   {
     icon: <Dolg />,
     title: 'Все долги',
-    description: 'кредиты, карты, микрозаймы, коммуналка',
+    description: 'кредиты, карты, микрозаймы, коммуналка и т.п',
     maxWidth: 'min-w-[343px]',
   },
   {

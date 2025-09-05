@@ -49,7 +49,7 @@ const OurTreatment = () => {
               viewport={{ once: true, amount: 0.2 }}
               className='flex flex-col gap-[20px] max-w-[480px] w-full'
             >
-              <img className='max-w-[48px] w-full h-[49px]' src='/assets/images/Logo.svg' alt="Logo" />
+              <img loading="lazy" className='max-w-[48px] w-full h-[49px]' src='/assets/images/Logo.svg' alt="Logo" />
               <h3 className='text-[30px] leading-[127%] text-[#181d27] text-left font-[600]'>НАШ ПОДХОД:</h3>
               <div className='mt-[32px]'>
                 <Checklist items={symptoms}/>

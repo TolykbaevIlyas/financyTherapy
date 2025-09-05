@@ -189,7 +189,7 @@ function App() {
               </a>
 
               <a
-                href="https://vk.com/?u=2&to=L3dyaXRlODMwMzYyOTUz"
+                href="https://vk.me/arkadiy.shevchenko"
                 target="_blank"
                 rel="noopener noreferrer"
               >
