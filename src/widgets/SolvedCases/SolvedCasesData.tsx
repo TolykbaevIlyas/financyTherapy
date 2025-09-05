@@ -16,7 +16,7 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Андрей-М..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Андрей М.',
-      major: 'Учитель',
+      major: 'Кассир',
     },
   },
   {
@@ -26,7 +26,7 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Дмитрий-С..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Дмитрий С.',
-      major: 'Фельдшер скорой помощи',
+      major: 'Оператор кол-центра',
     },
   },
   {
@@ -36,7 +36,7 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Марина-П..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Марина П.',
-      major: 'Официант',
+      major: 'Риелтор',
     },
   },
   {
@@ -46,7 +46,7 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Юлия А..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Юлия А.',
-      major: 'Риелтор',
+      major: 'Учитель начальных классов',
     },
   },
   {
@@ -56,10 +56,9 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Ольга Р..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Ольга Р.',
-      major: 'Водитель такси',
+      major: 'Социальный работник',
     },
   },
-
   {
     title: 'Долг 4.2 млн ₽',
     description:
@@ -77,7 +76,7 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Семья Ивановых.png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Семья Ивановых',
-      major: 'Водитель такси',
+      major: 'Бухгалтер (начального уровня)',
     },
   },
   {
@@ -87,7 +86,7 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Антон С..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Антон С.',
-      major: 'Строительный рабочий',
+      major: 'Водитель общественного транспорта',
     },
   },
   {
@@ -96,7 +95,7 @@ export const featuresSolvedCases = [
     account: {
       icon: <img loading="lazy" src="/assets/images/Дмитрий К..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Дмитрий К',
-      major: 'Риелтор',
+      major: 'Повар в столовой/кафе',
     },
   },
   {
@@ -105,7 +104,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Виктория М..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Виктория М',
-      major: 'Бухгалтер',
+      major: 'Парикмахер',
     },
   },
   {
@@ -115,7 +114,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Алёна П..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Алёна П.',
-      major: 'Медицинская сестра',
+      major: 'Сборщик на производстве',
     },
   },
   {
@@ -125,7 +124,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Светлана Г..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Светлана Г.',
-      major: 'Учитель начальных классов',
+      major: 'Курьер',
     },
   },
   {
@@ -135,7 +134,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Игорь В..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Игорь В.',
-      major: 'Водитель общественного транспорта',
+      major: 'Администратор в фитнес-клубе',
     },
   },
   {
@@ -145,7 +144,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Елена Т..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Елена Т.',
-      major: 'Администратор в фитнес-клубе',
+      major: 'Электромонтер/сантехник',
     },
   },
   {
@@ -155,7 +154,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Михаил Ю..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Михаил Ю.',
-      major: 'Охранник',
+      major: 'Кладовщик',
     },
   },
   {
@@ -165,7 +164,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="assets/images/Инна С..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Инна С.',
-      major: 'Парикмахер',
+      major: 'Охранник',
     },
   },
 ];

@@ -122,30 +122,30 @@ const CalculatorAndDetails = () => {
               Ваши ежедневные потери:
             </p>
             <div className="flex flex-col gap-[16px]">
-              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27]">
-                <p>На процентах:</p>
+              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27] items-end">
+                <p className='text-left'>На процентах:</p>
                 <p>{formatCurrency(dailyInterest)}</p>
               </div>
-              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27]">
-                <p>На штрафах при просрочке:</p>
+              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27] items-end">
+                <p className='text-left'>На штрафах при просрочке:</p>
                 <p>{formatCurrency(dailyFine)}</p>
               </div>
-              <div className="w-full flex justify-between font-[400] text-[18px] text-[#181d27]">
+              <div className="w-full text-left flex justify-between font-[400] text-[18px] text-[#181d27] items-end">
                 <p>Упущенная выгода:</p>
                 <p>{formatCurrency(dailyLoss)}</p>
               </div>
             </div>
             <div className="flex flex-col gap-[20px]">
-              <div className="w-full flex justify-between">
-                <p className="font-[600] text-[18px] text-[#181d27]">
+              <div className="w-full flex justify-between items-end">
+                <p className="font-[600] text-left text-[18px] text-[#181d27]">
                   За месяц это составит:
                 </p>
                 <p className="font-[600] text-[18px] text-[#181d27]">
                   {formatCurrency(monthlyLoss)}
                 </p>
               </div>
-              <div className="w-full flex justify-between">
-                <p className="font-[600] text-[18px] text-[#181d27]">
+              <div className="w-full flex justify-between items-end">
+                <p className="font-[600] text-left text-[18px] text-[#181d27]">
                   За год это составит:
                 </p>
                 <p className="font-[600] text-[18px] text-[#181d27]">

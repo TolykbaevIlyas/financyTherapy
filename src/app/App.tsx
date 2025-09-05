@@ -73,6 +73,7 @@ function App() {
             title="ПРОЗРАЧНОЕ ЦЕНООБРАЗОВАНИЕ"
             titleM="ПРОЗРАЧНЫЕ ЦЕНЫ:"
             plans={plans}
+            plansM={plans}
             ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
             onCtaClick={() => console.log('cta clicked')}
           />
@@ -105,11 +106,13 @@ function App() {
           <DebtWarningBlock />
           <ExpertBlock />
           <BiographyArkadi />
-          <div className='pt-[96px] pb-[64px] text-[36px] font-[600] leading-[122%] text-[#181d27] mt-[96px]'>ИНВЕСТИЦИЯ В РЕШЕНИЕ ПРОБЛЕМЫ</div>
+          <div className='pt-[96px] pb-[64px] text-[36px] font-[600] leading-[122%] text-[#181d27] mt-[96px] max-lg:hidden'>ИНВЕСТИЦИЯ В РЕШЕНИЕ ПРОБЛЕМЫ</div>
+          <div className='pt-[96px] pb-[32px] text-[36px] font-[600] leading-[122%] text-[#181d27] mt-[96px] lg:hidden'>ИНВЕСТИЦИЯ В РЕШЕНИЕ</div>
           <PricingCard
             title="ЧЕСТНОЕ ЦЕНООБРАЗОВАНИЕ БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ:"
             titleM="НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:"
             plans={plans2}
+            plansM={plans}
             ctaLabel="ПОЛУЧИТЬ ПЕРСОНАЛЬНЫЙ ПЛАН"
             onCtaClick={() => console.log('cta clicked')}
             buttons={false}
@@ -177,7 +180,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="wp" />
+                <img loading="lazy" className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="wp" />
               </a>
 
               <a
@@ -185,7 +188,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="tg" />
+                <img loading="lazy" className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="tg" />
               </a>
 
               <a
@@ -193,7 +196,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="vk" />
+                <img loading="lazy" className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="vk" />
               </a>
 
               <a
@@ -202,7 +205,7 @@ function App() {
                 rel="noopener noreferrer"
                 className='flex'
               >
-                <img className="cursor-pointer " src="/assets/images/maxLogo.svg" alt="max"/>
+                <img loading="lazy" className="cursor-pointer " src="/assets/images/maxLogo.svg" alt="max"/>
               </a>
             </motion.div>
             <motion.div className='text-[#181d27] mt-[64px] mb-[96px] text-[18px] font-[400] leading-[156%] max-lg:hidden'>

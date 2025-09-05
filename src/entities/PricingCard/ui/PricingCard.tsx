@@ -6,14 +6,15 @@ interface PricingProps {
   title?: string;
   titleM?: string;
   plans: IPricingPlan[];
+  plansM: IPricingPlan[];
   ctaLabel: string;
   onCtaClick?: () => void;
   buttons?: boolean;
 }
 
-const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = true }: PricingProps) => {
+const PricingCard = ({ title, titleM, plans, plansM, ctaLabel, onCtaClick, buttons = true }: PricingProps) => {
   return (
-    <section className={`text-center py-12 max-lg:pb-[10px]  ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'pt-[10px]' : 'pt-[96px]  '} `}>
+    <section className={`text-center ${titleM === "НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:" ? 'max-lg:pb-[32px]': 'max-lg:pb-[40px]'} py-12 max-lg:pb-[10px] ${titleM === 'ПРОЗРАЧНЫЕ ЦЕНЫ:' ? 'pt-[10px]' : titleM === "НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:" ? 'pt-[32px]' :'pt-[96px]'} `}>
 
       {/* Заголовки */}
       <motion.h2
@@ -25,19 +26,33 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
       >
         {title}
       </motion.h2>
-
-      <motion.h2
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="text-[30px] font-[600] leading-[122%] mb-8 text-[#181d27] lg:hidden max-w-[325px] w-full m-auto"
-      >
-        {titleM}
-      </motion.h2>
+      {titleM !== 'НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:' ? 
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-[30px] font-[600] leading-[122%] mb-8 text-[#181d27] lg:hidden max-w-[325px] w-full m-auto"
+        >
+          {titleM}
+        </motion.h2>
+    : ''}
+      
 
       {/* Сетка с тарифами */}
-      <div className="max-w-[1216px] rounded-[16px] max-lg:m-auto w-full h-[240px] grid mt-[64px] max-lg:justify-center max-lg:text-center max-lg:grid-cols-1 grid-cols-3 items-center text-center bg-[#fafafa] gap-6 mx-auto mb-8 max-lg:h-[552px] max-lg:max-w-[375px]">
+      <div className="max-w-[1216px] rounded-[16px] max-lg:m-auto w-full h-[240px] grid mt-[64px] max-lg:justify-center max-lg:text-center max-lg:grid-cols-1 grid-cols-3 items-center text-center bg-[#fafafa] gap-6 mx-auto mb-8 max-lg:h-[552px] max-lg:gap-[32px] max-lg:max-w-[375px]">
+        {titleM === 'НИКАКИХ СКРЫТЫХ ПЛАТЕЖЕЙ:' ? 
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-[30px] mt-[40px] font-[600] leading-[122%]  text-[#181d27] lg:hidden max-w-[325px] w-full m-auto"
+        >
+          {titleM}
+        </motion.h2>
+        : ''}
+        
         {plans.map((plan, index) => (
           <motion.div
             key={plan.id}
@@ -45,7 +60,20 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="flex flex-col items-center max-w-[341px] w-full h-[112px] max-lg:w-full max-lg:justify-center"
+            className="flex flex-col items-center max-w-[341px] w-full h-[112px] max-lg:w-full max-lg:justify-center max-lg:hidden"
+          >
+            <p className="text-[60px] font-[600] text-[#1570ef] mb-2">{plan.price}</p>
+            <p className="text-[#181d27] text-[18px] font-[600] leading-[156%]">{plan.description}</p>
+          </motion.div>
+        ))}
+        {plansM.map((plan, index) => (
+          <motion.div
+            key={plan.id}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center max-w-[341px] w-full h-[112px] max-lg:w-full max-lg:justify-center lg:hidden"
           >
             <p className="text-[60px] font-[600] text-[#1570ef] mb-2">{plan.price}</p>
             <p className="text-[#181d27] text-[18px] font-[600] leading-[156%]">{plan.description}</p>
@@ -104,7 +132,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img className="cursor-pointer" src="/assets/images/WPlogo.svg" alt="wp" />
+    <img className="cursor-pointer" loading="lazy" src="/assets/images/WPlogo.svg" alt="wp" />
   </a>
 
   <a
@@ -112,7 +140,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img className="cursor-pointer" src="/assets/images/tgLogo.svg" alt="tg" />
+    <img className="cursor-pointer" loading="lazy" src="/assets/images/tgLogo.svg" alt="tg" />
   </a>
 
   <a
@@ -120,7 +148,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img className="cursor-pointer" src="/assets/images/vkLogo.svg" alt="vk" />
+    <img className="cursor-pointer" loading="lazy" src="/assets/images/vkLogo.svg" alt="vk" />
   </a>
 
   <a
@@ -129,7 +157,7 @@ const PricingCard = ({ title, titleM, plans, ctaLabel, onCtaClick, buttons = tru
     rel="noopener noreferrer"
     className="flex"
   >
-    <img className="cursor-pointer" src="/assets/images/maxLogo.svg" alt="max" />
+    <img className="cursor-pointer" loading="lazy" src="/assets/images/maxLogo.svg" alt="max" />
   </a>
 </motion.div>
 </>

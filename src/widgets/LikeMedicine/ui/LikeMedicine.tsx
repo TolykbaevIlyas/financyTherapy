@@ -14,7 +14,7 @@ const LikeMedicine = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
-            className='flex flex-col gap-[24px]'
+            className='flex flex-col lg:gap-[48px] gap-[24px]'
           >
             <h3 className='max-w-[1024px] w-full m-auto text-[60px] leading-[120%] text-[#181d27] font-[600] max-lg:hidden'>
               КАК В МЕДИЦИНЕ — СНАЧАЛА К ТЕРАПЕВТУ, ПОТОМ К СПЕЦИАЛИСТУ
@@ -32,7 +32,7 @@ const LikeMedicine = () => {
           </motion.div>
 
           {/* Сравнение */}
-          <div className='flex justify-center lg:pt-[20px] max-lg:flex-col max-lg:m-auto max-lg:gap-[32px]'>
+          <div className='flex justify-center lg:pt-[32px] max-lg:flex-col max-lg:m-auto max-lg:gap-[32px]'>
 
             {/* Левая колонка */}
             <motion.div

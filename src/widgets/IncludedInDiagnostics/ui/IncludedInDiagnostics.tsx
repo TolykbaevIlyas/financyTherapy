@@ -42,7 +42,7 @@ const IncludedInDiagnostics = () => {
 
   return (
     <ContainerWrapper>
-      <div className="border border-[#E9EAEB] rounded-[16px] overflow-hidden bg-white shadow-[0_2px_2px_-1px_rgba(10,13,18,0.04),0_4px_6px_-2px_rgba(10,13,18,0.03),0_12px_16px_-4px_rgba(10,13,18,0.08)]">
+      <div className="border max-lg:mt-[40px] border-[#E9EAEB] rounded-[16px] overflow-hidden bg-white shadow-[0_2px_2px_-1px_rgba(10,13,18,0.04),0_4px_6px_-2px_rgba(10,13,18,0.03),0_12px_16px_-4px_rgba(10,13,18,0.08)]">
         {/* Заголовок */}
         <div className="border-b border-[#E9EAEB] pt-[32px] pb-[24px] px-[32px] text-start">
           <h2 className="text-[#181D27] hidden md:block text-[20px] font-semibold">
