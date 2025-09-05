@@ -124,7 +124,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Светлана Г..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Светлана Г.',
-      major: 'Курьер',
+      major: 'Администратор в фитнес-клубе',
     },
   },
   {
@@ -134,7 +134,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Игорь В..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Игорь В.',
-      major: 'Администратор в фитнес-клубе',
+      major: 'Курьер',
     },
   },
   {
@@ -144,7 +144,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="/assets/images/Елена Т..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Елена Т.',
-      major: 'Электромонтер/сантехник',
+      major: 'Продавец в зоомагазине',
     },
   },
   {
@@ -164,7 +164,7 @@ export const featuresSolvedCases = [
       account: {
       icon: <img loading="lazy" src="assets/images/Инна С..png" className='h-[48px] max-w-[48px] w-full rounded-full'/>,
       name: 'Инна С.',
-      major: 'Охранник',
+      major: 'Мастер маникюра',
     },
   },
 ];
